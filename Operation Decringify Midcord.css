@@ -827,11 +827,15 @@ circle[fill="black"][r="20"][cx="100"]
 rect[class*="pointerEvents_"][mask="url(#svg-mask-status-online-mobile)"]
 {
   outline: 2px solid rgb(46, 38, 38);
-  border-radius:1px;
+  border-radius:1px!important;
 }
 rect[class*="pointerEvents_"][width="16"][height="24"]{
   outline: 2px solid rgb(46, 38, 38);
-  border-radius:1px;
+  border-radius:1px!important;
+}
+rect[class*="pointerEvents_"][width="10"][height="15"]{
+  outline: 2px solid rgb(46, 38, 38);
+  border-radius:1px!important;
 }
 
 /* rounded mute icon in call (ill fix this css mess one day...) */
