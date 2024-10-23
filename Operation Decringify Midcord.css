@@ -13,6 +13,7 @@
     - Without DTM-08 V2 theme, some server icons/server folders fail to maintain it's square shape. 
     - With more than 12 DMs open, you can start scrolling down prematurely in your recents list.
     - Square pfps in calls and some 'Active Now' pfp icons
+    - ColorSighted shows your online/away/dnd/invis status all as green when switching your status
 * @source https://github.com/TalesOfSTOPHERE/Operation-Decringify-Midcord
 */
 
@@ -809,6 +810,11 @@ foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
   x: 2px!important;
   y: 2px!important;
 }
+/* fixes alignment issues near deafen/mute button */
+.container_b2ca13 .avatar_b2ca13{
+    margin-bottom: 4px;
+    margin-left: 1px;
+}
 
 /* status indicator outline */
 rect[class*="pointerEvents_"]
@@ -840,6 +846,11 @@ rect[class*="pointerEvents_"][width="10"][height="15"]{
 rect[fill="black"][style="opacity: 0.45;"]{
     display: none;
 }
+/* fixes square status icon */
+.status_c7d26b {
+    border-radius: 10px;
+}
+
 
 /* rounded mute icon in call (ill fix this css mess one day...) */
 button[aria-label="Turn Off Microphone"][class*="staticButton_"][class*="lookBlank_"][class*="colorable_"]{
