@@ -3,6 +3,15 @@
 * @author talesofstophere
 * @version 0.1
 * @description Make discord less cringe, using cringe and poorly done css by yours truly. only used github for a few friends. not all css made by me. 
+    HIGHLY RECOMMENDED: 
+    - Use vencord
+    - Install 'ColorSighted' plugin
+    - To make this look good with PlatformIndicators, turn off 'Color Mobile Indicator' in the settings of the plugin
+    - Use DTM-08 V2 by 11pixels 
+    TO DO/KNOWN ISSUES:
+    - Offline members other than the user (yourself) in discord servers have their outline offset broken and do not retain curved outline. 
+    - Without DTM-08 V2 theme, some server icons/server folders fail to maintain it's square shape. 
+    - With more than 12 DMs open, you can start scrolling down prematurely in your recents list.
 * @source https://github.com/TalesOfSTOPHERE/Operation-Decringify-Midcord
 */
 
