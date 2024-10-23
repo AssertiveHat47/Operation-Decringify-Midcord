@@ -837,7 +837,7 @@ rect[class*="pointerEvents_"][width="10"][height="15"]{
   outline: 2px solid rgb(46, 38, 38);
   border-radius:1px!important;
 }
-rect[fill="black"][height="52"][width="40"][x="80"][y="68"][rx="8"][style="opacity: 0.45;"]{
+rect[fill="black"][style="opacity: 0.45;"]{
     display: none;
 }
 
