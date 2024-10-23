@@ -851,8 +851,12 @@ rect[fill="black"][style="opacity: 0.45;"]{
     border-radius: 10px;
 }
 
-
-/* rounded mute icon in call (ill fix this css mess one day...) */
+/* rounded mute icon in call (ill fix this messy layout one day...) */
 button[aria-label="Turn Off Microphone"][class*="staticButton_"][class*="lookBlank_"][class*="colorable_"]{
     border-radius: 4px;
+}
+
+/* Deletes  'nitro preview' in settings -> user profile */
+div[class*="segmentedControlNonNitro_"]{
+    display: none;
 }
