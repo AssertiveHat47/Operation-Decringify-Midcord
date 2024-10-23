@@ -824,3 +824,13 @@ circle[fill="black"][r="20"][cx="100"]
 {
   display: none;
 }
+rect[class*="pointerEvents_"][mask="url(#svg-mask-status-online-mobile)"]
+{
+  outline: 2px solid rgb(46, 38, 38);
+  border-radius:1px;
+}
+
+/* rounded mute icon in call (ill fix this css mess one day...) */
+button[aria-label="Turn Off Microphone"][class*="staticButton_"][class*="lookBlank_"][class*="colorable_"]{
+    border-radius: 4px;
+}
