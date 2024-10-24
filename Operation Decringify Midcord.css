@@ -860,3 +860,8 @@ button[aria-label="Turn Off Microphone"][class*="staticButton_"][class*="lookBla
 div[class*="segmentedControlNonNitro_"]{
     display: none;
 }
+
+/* in call speaking border (bottom left) */
+.avatarSpeaking_c51b4e{
+    border-radius: 4px;
+}
