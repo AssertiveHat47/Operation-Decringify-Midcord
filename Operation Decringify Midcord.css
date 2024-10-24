@@ -870,3 +870,46 @@ div[class*="segmentedControlNonNitro_"]{
 .wrapper_c1da7a{
     display: none;
 }
+
+/* removes border on tiny icon in someones profile next to mutual friend/mutual servers */
+foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"]){
+    x: 0px !important;
+    y: 0px !important;
+    outline: none;
+    box-shadow: none;
+}
+/* mutual friend icon stuff bla bla */
+.avatar_ccc074{
+    mask: none;
+    -webkit-mask: none;
+    inline-size: 10px;
+}
+.section_fc9b46{
+    gap: 12px;
+}
+.biteSizeInnerThemed_c69a7b .mutuals_fc9b46 .iconSizeSmol_a64689{
+    border-radius: 2px;
+}
+
+/* removes border from offline server members and fixes pixel offset */
+.offline_a31c43 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+    x: 0px !important;
+    y: 0px !important;
+    outline: none;
+    box-shadow: none !important;
+}
+.selected_d808b0 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* square pfps in call + borders*/
+.voiceAvatar_db83a2{
+    border-radius: 4px;
+}
+.border_db83a2.speaking_db83a2{
+    border-radius: 4px;
+}
+.border_db83a2{
+    border-radius: 4px;
+}
