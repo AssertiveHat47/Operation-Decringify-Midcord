@@ -595,11 +595,12 @@ div[class*=tierDefaultUnlocked_]
 {
   display: none;
 }
-/* removes 'unlock more slots' button in server settings -> stickers */
-button[class*="lookFilled_"][class*="colorGreen_"]:has([class*=contents_])
+/* removes 'unlock more slots' button in server settings -> stickers 
+(BROKEN: removes avatar apply button lol */
+/* button[class*="lookFilled_"][class*="colorGreen_"]:has([class*="contents_"])
 {
   display: none;
-}
+} */
 
 /* removes 'soundboard' tab from server settings */
 div[data-tab-id="SOUNDBOARD"]
