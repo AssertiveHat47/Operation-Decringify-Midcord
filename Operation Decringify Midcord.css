@@ -913,3 +913,11 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
 .border_db83a2{
     border-radius: 4px;
 }
+.row_a5b954 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+    y: 0px !important;
+    x: 0px !important;
+    border-radius: 4px !important;
+}
+.svg_c51b4e{
+    border-radius: 4px !important;
+}
