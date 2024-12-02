@@ -921,3 +921,8 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
 .svg_c51b4e{
     border-radius: 4px !important;
 }
+
+/* removes discover from bottom of server list as of 03/12/2024 */
+.footer_f8ec41 {
+display: none;
+}
