@@ -950,3 +950,37 @@ div[class="badgeContainer_d60c6d"]:has([d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86
 .overlay_c69a7b.biteSize_c69a7b.card_ae1fa2 {
     display: none;
 }
+
+/* Changes ALL new nitro tier icons to the classic nitro icon */
+/* fire */ 
+img[src="https://cdn.discordapp.com/badge-icons/cff7119d4417261c3f52fde8a94ba8e5.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* ruby */ 
+img[src="https://cdn.discordapp.com/badge-icons/ddb868782712aa9f4ef98bef4d6e14f6.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* emerald */ 
+img[src="https://cdn.discordapp.com/badge-icons/2447661dbda1a992a616a583f8492ae3.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* diamond */ 
+img[src="https://cdn.discordapp.com/badge-icons/7c85d3834db671b01e6d0fd1538663a0.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* platinum */ 
+img[src="https://cdn.discordapp.com/badge-icons/3393b2ca6e25e40d4bb3bd23d60d0cdd.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* gold */ 
+img[src="https://cdn.discordapp.com/badge-icons/850a7f5909f9d54d6ad986c096937911.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* silver */ 
+img[src="https://cdn.discordapp.com/badge-icons/3d533bea11ec4f7bdbf23a4bdc7a373f.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
+/* bronze */ 
+img[src="https://cdn.discordapp.com/badge-icons/19a1562a9ce21227116624daaf69e450.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
