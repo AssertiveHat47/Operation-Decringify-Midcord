@@ -980,9 +980,3 @@ img[src="https://cdn.discordapp.com/badge-icons/3d533bea11ec4f7bdbf23a4bdc7a373f
 img[src="https://cdn.discordapp.com/badge-icons/19a1562a9ce21227116624daaf69e450.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
-
-/* removes CRINGE POP OUT SHILLING SHITRO */
-div[class*="popout_"] {
-    display: none;
-}
-
