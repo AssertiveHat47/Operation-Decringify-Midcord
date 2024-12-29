@@ -990,3 +990,30 @@ img[src="https://cdn.discordapp.com/badge-icons/19a1562a9ce21227116624daaf69e450
     height: 100%;
 }
 
+/* removes snow from direct messages button at very top left */
+.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:before{
+    display: none;
+}
+.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:after {
+    display: none;
+}
+
+/* fixes border radius shown on direct messages button at very top left */
+foreignObject[mask*="url(#"]:has(div[class="childWrapper_f90abb childWrapperNoHoverBg_f90abb"]) {
+    mask: none;
+    border-radius: 0px !important;
+}
+
+/* square profile pictures in server voice channels */
+div[class="userAvatar_ac3629 avatar_d80634 avatarSmall_d80634"] {
+    border-radius: 3px;
+}
+.container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 {
+    border-radius: 3px;
+}
+
+/* fixes scroll bar appearing when DMs aren't full with users yet */
+ul[role="list"][aria-label="Direct Messages"][class="content_eed6a8"] {
+    height: 100% !important;
+}
+
