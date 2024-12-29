@@ -809,6 +809,10 @@ foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
     margin-bottom: 4px;
     margin-left: 1px;
 }
+/* more profile picture squared + corners */
+img[alt] {
+    border-radius: 3px;
+}
 
 /* status indicator outline */
 rect[class*="pointerEvents_"]
@@ -984,4 +988,13 @@ img[src="https://cdn.discordapp.com/badge-icons/19a1562a9ce21227116624daaf69e450
 /* extends server list background colour to the bottom of the screen, hides cut off point that looks ugly */
 .scroller_fea3ef.none_c49869.scrollerBase_c49869 {
     height: 100%;
+}
+
+/* removes snow animation from direct messages button (very top left) */
+.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:after {
+    background-image: none;
+    animation: none;
+}
+.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:before {
+    background-image: none;
 }
