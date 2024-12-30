@@ -1006,8 +1006,12 @@ foreignObject[mask*="url(#"]:has(div[class="childWrapper_f90abb childWrapperNoHo
 div[class="userAvatar_ac3629 avatar_d80634 avatarSmall_d80634"] {
     border-radius: 3px;
 }
+.container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 .avatar_d80634.avatarSpeaking_d80634 {
+        border-radius: 3px;
+}
+
 .container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 {
-    border-radius: 3px;
+        border-radius: 3px !important;
 }
 
 /* fixes scroll bar appearing when DMs aren't full with users yet */
