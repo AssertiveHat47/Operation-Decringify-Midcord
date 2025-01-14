@@ -457,12 +457,9 @@ div[aria-label="Edit Image with Apps"]
   display: none;
 }
 
-/* remove activity cards from in servers */
-[class*="membersGroup_"][class*="container_"]:has([role="button"][style="width: 12px; height: 12px;"]):nth-of-type(1){
-   display:none!important;
-}
-[class*="container_"][class*="openOnHover_"]{
-   display:none!important;
+/* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
+h3[class="membersGroup_cbd271 container_a5ad5c text_a5ad5c"]:has([xmlns="http://www.w3.org/2000/svg"]) {
+    display: none;
 }
 
 /* Remove emoji button and soundboard button in bottom left 
