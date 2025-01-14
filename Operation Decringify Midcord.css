@@ -461,6 +461,9 @@ div[aria-label="Edit Image with Apps"]
 h3[class="membersGroup_cbd271 container_a5ad5c text_a5ad5c"]:has([xmlns="http://www.w3.org/2000/svg"]) {
     display: none;
 }
+div[class="container_c64476 openOnHover_c64476"] {
+    display: none;
+}
 
 /* Remove emoji button and soundboard button in bottom left 
 when watching screenshare/webcam */
@@ -1022,4 +1025,9 @@ ul[role="list"][aria-label="Direct Messages"][class="content_eed6a8"] {
 }
 .streamPreview_ba4b17 {
     border-radius: 6px;
+}
+
+/* hide quest icon in 'playing <game>' */
+svg[class="questsIcon_ad923e"] {
+    display: none;
 }
