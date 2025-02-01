@@ -11,6 +11,7 @@
     KNOWN ISSUES:
     - Without DTM-08 V2 theme, some server icons/server folders fail to maintain it's square shape. 
     - ColorSighted shows your online/away/dnd/invis status all as green when switching your status
+    - Like, everything else after huge update borfed it
 * @source https://github.com/TalesOfSTOPHERE/Operation-Decringify-Midcord
 */
 
@@ -458,10 +459,10 @@ div[aria-label="Edit Image with Apps"]
 }
 
 /* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
-h3[class="membersGroup_cbd271 container_a5ad5c text_a5ad5c"]:has([xmlns="http://www.w3.org/2000/svg"]) {
+h3[class="membersGroup_c8ffbb container__13cf1 text__13cf1"]:has([xmlns="http://www.w3.org/2000/svg"]) {
     display: none;
 }
-div[class="container_c64476 openOnHover_c64476"] {
+div[class="container__0f2e8 openOnHover__0f2e8"] {
     display: none;
 }
 
@@ -794,7 +795,7 @@ foreignObject[mask*="url(#"] {
 .clickable_f94206:hover .overlay_f94206:after{
   border-radius: 3px!important;
 }
-.full-motion .overlay_f94206:after{
+.full-motion .overlay__75742:after{
   border-radius: 3px!important;
 }
 foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
@@ -843,7 +844,7 @@ rect[fill="black"][style="opacity: 0.45;"]{
     display: none;
 }
 /* fixes square status icon */
-.status_c7d26b {
+.svg__2338f.mask_a423bd {
     border-radius: 10px;
 }
 
@@ -933,23 +934,23 @@ div[aria-label*="Played "]{
     display: none;
 }
 /* hides 'new player' */
-div[class="badgeContainer_d60c6d"]:has([d="M11.33 13.68c.41.27.93.27 1.34 0 1.73-1.1 6.2-4.3 6.2-8.02 0-2.02-1.6-3.66-3.59-3.66-1.46 0-2.42.58-3.28 1.44A4.33 4.33 0 0 0 8.72 2a3.63 3.63 0 0 0-3.6 3.66c0 3.72 4.48 6.92 6.2 8.02Z"]) {
+div[class="badgeContainer__635ed"]:has([d="M11.33 13.68c.41.27.93.27 1.34 0 1.73-1.1 6.2-4.3 6.2-8.02 0-2.02-1.6-3.66-3.59-3.66-1.46 0-2.42.58-3.28 1.44A4.33 4.33 0 0 0 8.72 2a3.63 3.63 0 0 0-3.6 3.66c0 3.72 4.48 6.92 6.2 8.02Z"]) {
     display: none;
 }
 /* hides 'new release'*/
-div[class="badgeContainer_d60c6d"]:has([d="M17.93 1.51a.74.74 0 0 0-1.41 0l-1.13 3.47h-3.65a.74.74 0 0 0-.43 1.35l2.95 2.14-1.13 3.47a.74.74 0 0 0 1.14.83l2.95-2.15 2.96 2.15a.74.74 0 0 0 1.14-.83l-1.13-3.47 2.95-2.14a.74.74 0 0 0-.43-1.35h-3.65l-1.13-3.47ZM10.7 14.7a1 1 0 0 0-1.4-1.4l-8 8a1 1 0 1 0 1.4 1.4l8-8ZM9.7 8.3a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-1.4-1.4l6-6a1 1 0 0 1 1.4 0ZM15.7 15.7a1 1 0 0 0-1.4-1.4l-6 6a1 1 0 1 0 1.4 1.4l6-6Z"]) {
+div[class="badgeContainer__635ed"]:has([d="M17.93 1.51a.74.74 0 0 0-1.41 0l-1.13 3.47h-3.65a.74.74 0 0 0-.43 1.35l2.95 2.14-1.13 3.47a.74.74 0 0 0 1.14.83l2.95-2.15 2.96 2.15a.74.74 0 0 0 1.14-.83l-1.13-3.47 2.95-2.14a.74.74 0 0 0-.43-1.35h-3.65l-1.13-3.47ZM10.7 14.7a1 1 0 0 0-1.4-1.4l-8 8a1 1 0 1 0 1.4 1.4l8-8ZM9.7 8.3a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-1.4-1.4l6-6a1 1 0 0 1 1.4 0ZM15.7 15.7a1 1 0 0 0-1.4-1.4l-6 6a1 1 0 1 0 1.4 1.4l6-6Z"]) {
     display: none;
 }
 /* hides 'trending'*/
-div[class="badgeContainer_d60c6d"]:has([d="M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"]) {
+div[class="badgeContainer__635ed"]:has([d="M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"]) {
     display: none;
 }
 /* hides 'in combat'/'path'*/
-div[class="badgeContainer_d60c6d"]:has([d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
+div[class="badgeContainer__635ed"]:has([d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
     display: none;
 }
 /* hides 'returning after x amount of time' */
-div[class="badgeContainer_d60c6d"]:has([d="M4 12a8 8 0 0 1 14.93-4H15a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1V3a1 1 0 1 0-2 0v3a9.98 9.98 0 0 0-18 6 10 10 0 0 0 16.29 7.78 1 1 0 0 0-1.26-1.56A8 8 0 0 1 4 12Z"]) {
+div[class="badgeContainer__635ed"]:has([d="M4 12a8 8 0 0 1 14.93-4H15a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1V3a1 1 0 1 0-2 0v3a9.98 9.98 0 0 0-18 6 10 10 0 0 0 16.29 7.78 1 1 0 0 0-1.26-1.56A8 8 0 0 1 4 12Z"]) {
     display: none;
 }
 
@@ -958,32 +959,36 @@ div[class="badgeContainer_d60c6d"]:has([d="M4 12a8 8 0 0 1 14.93-4H15a1 1 0 1 0 
 img[src="https://cdn.discordapp.com/badge-icons/cff7119d4417261c3f52fde8a94ba8e5.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
+/* opal */ 
+img[src="https://cdn.discordapp.com/badge-icons/5b154df19c53dce2af92c9b61e6be5e2.png"] {
+    content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
+}
 /* ruby */ 
-img[src="https://cdn.discordapp.com/badge-icons/ddb868782712aa9f4ef98bef4d6e14f6.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/cd5e2cfd9d7f27a8cdcd3e8a8d5dc9f4.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* emerald */ 
-img[src="https://cdn.discordapp.com/badge-icons/2447661dbda1a992a616a583f8492ae3.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/11e2d339068b55d3a506cff34d3780f3.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* diamond */ 
-img[src="https://cdn.discordapp.com/badge-icons/7c85d3834db671b01e6d0fd1538663a0.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/0d61871f72bb9a33a7ae568c1fb4f20a.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* platinum */ 
-img[src="https://cdn.discordapp.com/badge-icons/3393b2ca6e25e40d4bb3bd23d60d0cdd.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/0334688279c8359120922938dcb1d6f8.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* gold */ 
-img[src="https://cdn.discordapp.com/badge-icons/850a7f5909f9d54d6ad986c096937911.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/2895086c18d5531d499862e41d1155a6.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* silver */ 
-img[src="https://cdn.discordapp.com/badge-icons/3d533bea11ec4f7bdbf23a4bdc7a373f.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/4514fab914bdbfb4ad2fa23df76121a6.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 /* bronze */ 
-img[src="https://cdn.discordapp.com/badge-icons/19a1562a9ce21227116624daaf69e450.png"] {
+img[src="https://cdn.discordapp.com/badge-icons/4f33c4a9c64ce221936bd256c356f91f.png"] {
     content: url("https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png")
 }
 img[src="https://cdn.discordapp.com/badge-icons/undefined.png"] {
@@ -999,21 +1004,24 @@ img[src="https://cdn.discordapp.com/badge-icons/undefined.png"] {
 }
 
 /* removes snow from direct messages button at very top left */
-.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:before{
+.scroller_ef3116 .tutorialContainer__1f388 .childWrapper__6e9f8:before{
     display: none;
 }
-.scroller_fea3ef .tutorialContainer_f9623d .childWrapper_f90abb:after {
+.scroller_ef3116 .tutorialContainer__1f388 .childWrapper__6e9f8:after {
     display: none;
 }
 
 /* fixes border radius shown on direct messages button at very top left */
-foreignObject[mask*="url(#"]:has(div[class="childWrapper_f90abb childWrapperNoHoverBg_f90abb"]) {
+foreignObject[mask*="url(#"]:has(div[class="childWrapper__6e9f8 childWrapperNoHoverBg__6e9f8"]) {
     mask: none;
     border-radius: 0px !important;
 }
+.sidebar_c48ade {
+    border-radius: 0px!important;
+}
 
 /* square profile pictures in server voice channels */
-div[class="userAvatar_ac3629 avatar_d80634 avatarSmall_d80634"] {
+div[class="userAvatar__55bab avatar__07f91 avatarSmall__07f91"] {
     border-radius: 3px;
 }
 .container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 .avatar_d80634.avatarSpeaking_d80634 {
