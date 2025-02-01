@@ -259,7 +259,7 @@ div[aria-label="Start Video Call"]
  }
 
  /* removes message hover buttons completely (just right click lmao) */
-div[class="buttonsInner_d5deea popover_e986d9 popoverReactionHoverBar_e986d9 wrapper_f7e168"]
+div[class="buttonsInner__5126c popover_f84418 popoverReactionHoverBar_f84418 wrapper_f7ecac"]
  {
   display: none;
  }
