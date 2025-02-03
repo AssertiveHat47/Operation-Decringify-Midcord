@@ -357,7 +357,7 @@ div[style="height: 12px;"]
 
 /* removes separator line from ALL context menus 
 (keep an eye on this one) */
-div[class="separator_d90b3d"]
+div[class="separator_c1e9c4"]
 {
   display: none;
 }
@@ -859,7 +859,7 @@ div[class*="segmentedControlNonNitro_"]{
 }
 
 /* in call speaking border (bottom left) */
-.avatarSpeaking_c51b4e{
+.avatarSpeaking__44b0c{
     border-radius: 4px;
 }
 
@@ -889,25 +889,25 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
 }
 
 /* removes border from offline server members and fixes pixel offset */
-.offline_a31c43 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+.offline__5d473 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
     x: 0px !important;
     y: 0px !important;
     outline: none;
     box-shadow: none !important;
 }
-.selected_d808b0 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+.selected__91a9d foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
     outline: none;
     box-shadow: none !important;
 }
 
 /* square pfps in call + borders*/
-.voiceAvatar_db83a2{
+div[class*="voiceAvatar_"]{
     border-radius: 4px;
 }
-.border_db83a2.speaking_db83a2{
+.border_f910d0.speaking_f910d0{
     border-radius: 4px;
 }
-.border_db83a2{
+.border_f910d0{
     border-radius: 4px;
 }
 .row_a5b954 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
@@ -917,6 +917,10 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
 }
 .svg_c51b4e{
     border-radius: 4px !important;
+}
+/* deafen/mute icon in call turned into a square */
+.status_f910d0 {
+    border-radius: 4px;
 }
 
 /* removes discover from bottom of server list as of 03/12/2024 */
