@@ -1053,3 +1053,8 @@ ul[role="list"][aria-label="Direct Messages"][class="content_eed6a8"] {
 svg[class="questsIcon_ad923e"] {
     display: none;
 }
+
+/* Remove camera unavailable button */
+button[aria-label="Camera Unavailable"] {
+    display: none;
+}
