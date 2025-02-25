@@ -970,6 +970,9 @@ img[class="emoji emoji__8ac07"] {
 div[class="defaultColor__4bd52 text-xs/normal_cf4812 text__8ac07 dot__8ac07"] {
     display: none;
 }
+svg[aria-hidden="true"][role="img"][xmlns="http://www.w3.org/2000/svg"][width="12"][height="12"][fill="none"][viewBox="0 0 24 24"] {
+    display: none;
+}
 
 /* Changes ALL new nitro tier icons to the classic nitro icon */
 /* fire */ 
