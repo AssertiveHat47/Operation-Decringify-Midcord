@@ -1086,3 +1086,25 @@ button[aria-label="Camera Unavailable"] {
 div[class="wrapper_e9b191"]:has([class="rewardTileWrapper_e9b191"]) {
     display: none;
 }
+
+/* removes windows buttons when using windows titlebar */
+div[class="winButtons_c38106 winButtonsWithDivider_c38106"] {
+    display: none;
+}
+/* removes support button next to inbox */
+a[href="https://support.discord.com"] {
+    display: none;
+}
+
+/* remove games button in message box */
+div[class="buttonContainer_e6e74f app-launcher-entrypoint"] {
+    display: none;
+}
+/* select emoji */
+button[aria-label="Select emoji"] {
+    display: none;
+}
+/* message box buttons width */
+div[class="buttons__74017"] {
+    width: 70px;
+}
