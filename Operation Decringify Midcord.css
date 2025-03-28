@@ -1108,3 +1108,8 @@ button[aria-label="Select emoji"] {
 div[class="buttons__74017"] {
     width: 70px;
 }
+
+/* fixes disgusting 16px curve in folders for server icons */
+div[class="icon_f34534 guildIcon__48112 iconSizeMini_f34534 iconInactive_f34534"] {
+    border-radius: 4px !important;
+}
