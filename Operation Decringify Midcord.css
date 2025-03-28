@@ -1067,6 +1067,10 @@ button[aria-label="Camera Unavailable"] {
     display: none;
 }
 
+button[aria-label="Turn On Camera"] {
+    display: none;
+}
+
 .perksDemoContainer__5dec7 {
     display: none;
 }
@@ -1078,6 +1082,9 @@ div[class="wrapper_e9b191"]:has([class="rewardTileWrapper_e9b191"]) {
 
 /* removes windows buttons when using windows titlebar */
 div[class="winButtons_c38106 winButtonsWithDivider_c38106"] {
+    display: none;
+}
+div[class="winButtons_c38106"] {
     display: none;
 }
 /* removes support button next to inbox */
