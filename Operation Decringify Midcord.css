@@ -1146,3 +1146,7 @@ div[style*="background: "] {
 div[data-tab-id="Clicker Game Settings"] {
     display: none;
 }
+
+div[class*="innerCloseButtonPlated_"] {
+    background-color: transparent !important;
+}
