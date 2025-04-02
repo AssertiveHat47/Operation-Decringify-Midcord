@@ -1141,14 +1141,13 @@ div[class*="videoContainer_"] {
 div[style*="background: "] {
     background: transparent !important;
 }
+div[class*="innerCloseButtonPlated_"] {
+    background-color: transparent !important;
+}
 
 /* removes discord game lol */
 div[data-tab-id="Clicker Game Settings"] {
     display: none;
-}
-
-div[class*="innerCloseButtonPlated_"] {
-    background-color: transparent !important;
 }
 
 /* image viewing fixes */
