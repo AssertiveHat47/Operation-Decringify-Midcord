@@ -448,7 +448,7 @@ div[aria-label="Edit Image with Apps"]
 }
 
 /* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
-h3[class="membersGroup_c8ffbb container__13cf1 text__13cf1"]:has([xmlns="http://www.w3.org/2000/svg"]) {
+div[class="defaultColor__4bd52 text-sm/medium_cf4812 membersGroup_c8ffbb container__13cf1"]:has([xmlns="http://www.w3.org/2000/svg"]) {
     display: none;
 }
 div[class="container__0f2e8 openOnHover__0f2e8"] {
@@ -566,6 +566,17 @@ div[class="divider_b03b7f divider_bb33d5"]
 svg[class*="tierIcon_"][class*="tierIconLocked_"]
 {
   display: none;
+}
+/* server boost */
+div[class*="guildIconV2Container__"] {
+    display: none !important;
+}
+div[data-list-item-id*="channels___"] {
+    display: none;
+}
+/* server image backgrounds */
+div[class*="animatedContainer_"]:has(div[class*="bannerImage_"]):has([src*="https://cdn.discordapp.com/banners/"]) {
+    display: none;
 }
 /* removes buy buttons in server settings -> stickers */
 button[type="button"][class*="lookFilled_"][class*="colorGreen_"][class*="sizeMedium_"]
@@ -1114,3 +1125,23 @@ div[class="icon_f34534 guildIcon__48112 iconSizeMini_f34534 iconInactive_f34534"
 div[class="listItem__650eb"]:has(div[class*="discoveryIcon_"]) {
     display: none;
 }
+
+/* dm icon squish fix */
+div[style="opacity: 1; height: 40px; transform: scale(1);"]:has(foreignObject[mask*="url(#"]):has([data-list-item-id*="guildsnav___"]):has([src*="https://cdn.discordapp.com/avatars/"]) {
+    width: 48px !important; 
+    height: 48px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+/* Removes horrid DM container banner */
+div[class*="videoContainer_"] {
+    display: none !important;
+}
+div[class="container__4bbc6 noFade__4bbc6"] {
+    display: none !important;
+}
+div[class*="innerCloseButtonPlated_"] {
+    background-color: transparent !important;
+}
+
