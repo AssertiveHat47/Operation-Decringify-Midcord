@@ -1138,10 +1138,11 @@ div[style="opacity: 1; height: 40px; transform: scale(1);"]:has(foreignObject[ma
 div[class*="videoContainer_"] {
     display: none !important;
 }
-div[class="container__4bbc6 noFade__4bbc6"] {
-    display: none !important;
-}
-div[class*="innerCloseButtonPlated_"] {
-    background-color: transparent !important;
+div[style*="background: "] {
+    background: transparent !important;
 }
 
+/* removes discord game lol */
+div[data-tab-id="Clicker Game Settings"] {
+    display: none;
+}
