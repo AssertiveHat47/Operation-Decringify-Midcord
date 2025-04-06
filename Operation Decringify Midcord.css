@@ -1147,6 +1147,9 @@ div[style*="background: "] {
 div[class*="innerCloseButtonPlated_"] {
     background-color: transparent !important;
 }
+img[src*="https://cdn.discordapp.com/assets/collectibles/nameplates/"] {
+    display: none;
+}
 
 /* removes discord game lol */
 div[data-tab-id="Clicker Game Settings"] {
