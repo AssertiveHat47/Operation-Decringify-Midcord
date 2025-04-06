@@ -1163,3 +1163,38 @@ div[class="author__6088c base__5cd44"] {
 div[class="carouselModal_d3a6f0 theme-dark theme-midnight images-dark root__49fc1"] {
     box-shadow: none !important;
 }
+
+/* Call buttons */
+div[class*="buttonSection__"][class*="experimentButtonSection__"] {
+    color: transparent !important;
+    background: transparent !important;
+}
+div[class="contextMenuNubExperiment_f1ceac colorable_f1ceac attachedCaret_f1ceac experimentDark_f1ceac"] {
+    display: none;
+}
+span[class="dot__148e9 maskSecondary__148e9"] {
+    display: none;
+}
+.videoControls_bfe55a .bottomControls_bfe55a :is(.justifyStart_abf706, .justifyCenter_abf706, .justifyEnd_abf706) .button__201d5 {
+    border-radius: 4px !important;
+}
+.buttonSection__1405b {
+    gap: 0px !important;
+}
+div[class="attachedCaretButtonContainer_f1ceac"]:has([class="lottieIcon__5eb9b lottieIconColors__5eb9b centerIcon_f1ceac experimentControlIcon_f1ceac controlIcon_f1ceac themeable_f1ceac"]) {
+    display: none;
+}
+button[class="staticButton_f1ceac centerButton_f1ceac colorable_f1ceac experimentButton_f1ceac colorable_f1ceac disconnect_f1ceac fullRegionButton_f1ceac button__201d5 lookBlank__201d5 colorBrand__201d5"] {
+    width: 20px !important;
+}
+div[class="attachedCaretButtonContainer_f1ceac"]:has(button[class="staticButton_f1ceac centerButton_f1ceac colorable_f1ceac experimentButton_f1ceac colorable_f1ceac disconnect_f1ceac fullRegionButton_f1ceac button__201d5 lookBlank__201d5 colorBrand__201d5"]) {
+    padding: 4px !important;
+}
+div[class="buttonSection__1405b experimentButtonSection__1405b"]:has([aria-label="Share Your Screen"]) {
+    gap: 5px !important
+}
+div[aria-label="More Options"] {
+    height: 12px;
+    width: 12px;
+    border-radius: 0px !important;
+}
