@@ -1,17 +1,6 @@
 /*
-* @name OPERATION DECRINGIFY SHITCORD
-* @author talesofstophere
-* @version nil.
-* @description Make discord less cringe, using cringe and poorly done css by yours truly. only used github for a few friends. not all css made by me. 
-    HIGHLY RECOMMENDED: 
-    - Use Vencord
-    - Install 'ColorSighted' plugin
-    - To make this look good with PlatformIndicators, turn off 'Color Mobile Indicator' in the settings of the plugin
-    - Use DTM-08 V2 by 11pixels 
     KNOWN ISSUES:
-    - Without DTM-08 V2 theme, some server icons/server folders fail to maintain it's square shape. 
-    - ColorSighted shows your online/away/dnd/invis status all as green when switching your status
-    - Like, everything else after huge update borfed it
+    - all of it
 * @source https://github.com/TalesOfSTOPHERE/Operation-Decringify-Midcord
 */
 
@@ -1200,4 +1189,9 @@ div[aria-label="More Options"] {
     height: 12px;
     width: 12px;
     border-radius: 0px !important;
+}
+
+/* new server badge in profiles */
+span[class="chipletContainerInner__10651 chipletContainerInline__10651 clickable__10651"] {
+    display: none;
 }
