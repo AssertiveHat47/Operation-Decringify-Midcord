@@ -1187,3 +1187,11 @@ foreignObject[mask*="url(#"] {
 .full-motion .overlay__75742:after{
   border-radius: 3px!important;
 }
+.avatar_f9f2ca{
+  border-radius: 3px!important;
+  outline: 2px solid rgb(46, 38, 38);
+}
+foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
+  x: 2px!important;
+  y: 2px!important;
+}
