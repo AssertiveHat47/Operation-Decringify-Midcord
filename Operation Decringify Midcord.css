@@ -1172,3 +1172,22 @@ div[aria-label="More Options"] {
 span[class="chipletContainerInner__10651 chipletContainerInline__10651 clickable__10651"] {
     display: none;
 }
+
+/* square pfps */
+foreignObject[mask*="url(#"] {
+  mask: none;
+  border-radius: 3px!important;
+}
+.avatar_f9f2ca{
+  border-radius: 3px!important;
+  outline: 2px solid rgb(46, 38, 38);
+}
+.avatar_2e8lTP{
+  border-radius: 3px!important;
+}
+.clickable_f94206:hover .overlay_f94206:after{
+  border-radius: 3px!important;
+}
+.full-motion .overlay__75742:after{
+  border-radius: 3px!important;
+}
