@@ -1,43 +1,12 @@
 /*
-    KNOWN ISSUES:
-    - all of it
 * @source https://github.com/TalesOfSTOPHERE/Operation-Decringify-Midcord
 */
 
 
 
-/* more cringe effects on profiles */
-[class^="effect__"],[class^="effectsWrapper__"] {
-    display: none;
-}
-
-/* ? */
-[class*="hideEmoji__"] {
-    opacity: 1 !important;
-}
-
-/* ? i assume super reacts */
-[class^="reaction_"],[class*="shakeReaction__"] {
-    animation: none !important;
-}
-
 /* avatar decorations */
 svg[class^="avatarDecoration"],             /* Avatar Decorations */
 img[class^="avatarDecoration"],             /* Avatar Decorations in Messages */
-/* Fix 'View Profile' selector with hidden decoration */
-[class*="bannerSVGWrapper_"] > mask > image {
-    display: none;
-}
-[class*=avatarDecorationHint_] > foreignObject {
-  width: 80px;
-  height: 80px;
-  mask: url(#svg-mask-avatar-status-round-80);
-}
-[class*=avatarDecorationHint_] {
-  top: -80px;
-  left: 0px;
-  position: relative;
-}
 
 /* profile effects */
 [class^="profileEffects"] {
@@ -50,12 +19,6 @@ button[aria-label="Send a gift"]
     display: none;
 }
 
-/* Hide Channel App Launcher in chat */
-[class^="channelAppLauncher_"]
-{
-    display:none;
-}
-
 /* Hide things in DMs page */
 li div a[href="/shop"], /* Hide 'Shop' Tab */
 li div a[href="/store"] /* Hide 'Ntiro' Tab */
@@ -63,40 +26,9 @@ li div a[href="/store"] /* Hide 'Ntiro' Tab */
   display: none;
 }
 
-/* Disable nitro icon on members list hover and opening nitro page */
-/* Some discords have the boosting capitalized, some don't, no clue why. There's probably a cleaner way to do this. */
-div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server boosting since"]),
-div[class*=nameAndDecorators] div[role="button"]:has(svg[aria-label^="Server Boosting since"])
-{
-    pointer-events: none;
-}
-
-/* Disable 'Learn More' for nitro in the popout in the side DM */
-div[class*=overlayBackground_]:has(button[class*=getNitroButton_])
-{
+/* Disable nitro icon in word count + all upsells?*/
+div[class*="upsell_"] {
     display: none;
-};
-
-/* Disable nitro icon in word count */
-div[class*=characterCount_] div[class*=iconOnly_]:has(svg[class*=premium_])
-{
-    display: none;
-}
-
-/* Hide 'Explore Discoverable Servers' in server page */
-div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"])
-{
-  display: none;
-}
-
-/* Removes floating server list footer (currently only contains Discover)*/
-ul[data-list-id='guildsnav'] > div[class^=footer]
-{
-  display: none;
-}
-div[class*=unreadMentionsFixedFooter]
-{
-  bottom: 0px;
 }
 
 /* Make Super Reactions less annoying */
@@ -111,33 +43,16 @@ img.emoji
 div[class*="shakeReaction"]
 {
     animation: none !important;
-}
+} 
 
-/* Hide small home server boost button next to server name at the top left */
-div[class^="flowerStarContainer_c91f7d"]
+/* removes use apps button when clicking attach file */
+div[id="channel-attach-SLASH_COMMAND"]
 {
   display: none;
-}
-
-/* Hide sticker picker button */
-button[aria-label="Open sticker picker"] {
-    display: none;
-}
-
-/* removes create poll button when clicking attach file */
-div[id="channel-attach-poll"]
-{
-  display: none;
-}
+} 
 
 /* removes new member badges in servers */
 div[class^="newMemberBadge_"]
-{
-  display: none;
-}
-
-/* removes server boost icon on names in servers */
-svg[class^="premiumIcon_"]
 {
   display: none;
 }
@@ -154,34 +69,8 @@ div[id="guild-header-popout-application-directory"]
   display: none;
  }
 
-/* removes threads button (next to pins in servers) */
-div[aria-label="Threads"]
- {
-  display: none;
- }
-
- /* removes notifications button (next to pins in servers) 
-(right click server in server list for alternative) */
-div[aria-label="Notification Settings"]
- {
-  display: none;
- }
-
-/* Disable Popup ads */
-.containerWrapper_fa6aa6,                   /* "Like this avatar decoration" popup on user modal */
-container__9dbd2                            /* Profile effect ad */ {
-    display: none;
-}
-
 /* Disable profile edit page upsell */
 div[id="profile-customization-tab"] > div[class^="container_"]
-{
-    display:none;
-}
-
-/* Disable emoji inspection upsell */
-[class^="nitroTextAndBadge_"], button:has([class^="premiumIcon_"]),
-[class^="emojiSection_"] [class^="flex_"] div[class*="text-sm-normal"]
 {
     display:none;
 }
@@ -237,24 +126,10 @@ div[aria-label="Start Video Call"]
  }
 
  /* removes message hover buttons completely (just right click lmao) */
-div[class="buttonsInner__5126c popover_f84418 popoverReactionHoverBar_f84418 wrapper_f7ecac"]
+div[class*="popoverReactionHoverBar_"]
  {
   display: none;
- }
-
-/* remove small add note button when viewing profile on side 
-(add notes using full profile view instead) */
-button[aria-label="Add Note"]
-{
-  display: none;
-}
-
-/* removes add notes from context menu
-(add notes using full profile view instead) */
-div[id="user-context-note"]
-{
-  display: none;
-}
+ } 
 
 /* removes 'invite to server' from 3 dots on full profile */
 div[id="user-profile-overflow-menu-invite-to-server"]
@@ -268,8 +143,7 @@ div[id="user-context-invite-to-server"]
   display: none;
 }
 
-/* removes 'close dm' from user context menu
-(use the X button retard) */
+/* removes 'close dm' from user context menu */
 div[id="user-context-close-dm"]
 {
   display: none;
@@ -317,18 +191,8 @@ div[id="textarea-context-languages"]
   display: none;
 }
 
-/* removes 'events, browse channels and members' from servers
-(keep an eye on this incase) */
-li div[class="containerDefault_f6f816 wrapper_d8bfb3"]
-{
-  display: none;
-}
-div[class="sectionDivider_c43953"]
-{
-  height: 2px;
-  opacity: 0;
-}
-div[style="height: 12px;"]
+/* removes 'events' from top of server channel list */
+div[class*="containerDefault_"]:has(div[aria-label="Events"])
 {
   display: none;
 }
@@ -341,7 +205,7 @@ div[class="separator_c1e9c4"]
 }
 
 /* removes server event notice */
-div[class="channelNotice_a6cd4e"]
+div[class*="channelNotice_"]
 {
   display: none;
 }
@@ -357,7 +221,7 @@ div[aria-label="Pronouns"]
 {
   display: none;
 }
-div[class="dotSpacer_c32acf"]
+div[class*="dotSpacer__"]
 {
   display: none;
 }
@@ -379,13 +243,6 @@ div[class="animatedContainer_fd6364"]
   display: none; 
 }
 div[style="height: 84px;"]
-{
-  display: none;
-}
-
-/* disables small '2+ in voice channel' popup that appears above your name
-at the bottom of channels */
-div[class="container_eba0ba bottom_eba0ba"]
 {
   display: none;
 }
@@ -418,20 +275,8 @@ div[class="vc-uvs-speaker vc-uvs-clickable"]
   display: none;
 }
 
-/* removes 'forward' from images/gifs? */
-div[class^="container_e31053 forward_"]
-{
-  display: none;
-}
-
 /* removes 'free 1 month' badge that shows up for nitro */
 div[class^="premiumTrialBadge_"]
-{
-  display: none;
-}
-
-/* Remove 'edit image with apps' from when hovering on gifs */
-div[aria-label="Edit Image with Apps"]
 {
   display: none;
 }
@@ -460,12 +305,6 @@ div[class*="statusDiv_"]
   display: none;
 }
 
-/* remove 'choose an activity' blue button from screenshare/webcam view */
-[class="button_a5ea57 button_dd4f85 lookFilled_dd4f85 colorBrand_dd4f85 sizeLarge_dd4f85 grow_dd4f85"]
-{
-  display: none;
-}
-
 /* remove nitro trial shill at the top of screen */
 div[class*="colorPremiumTier2_"][class*="colorPremium_"]
 {
@@ -478,25 +317,18 @@ div[data-tab-id="merchandise"]
   display: none;
 }
 
-/* removes 'explore discoverable servers' from add friend screen */
-div[class="grid_aef5fd"]:has(button[class="container_aef5fd"])
-{
-  display: none;
-}
-
-/* removes 'other places to make friends' from add friend screen */
-h2[class="h2_c46f6a title_c46f6a defaultColor_c46f6a title_aef5fd"]
-{
-  display: none;
-}
-
 /* removes upsell overlay eyesore in settings -> profiles -> server profiles */
 div[class*="upsellOverlay_"]
 {
   display: none;
 }
 
-/* removse 'family' tab from settings */
+/* removes wumpus waving image on add friend screen */
+img[src="/assets/25c27c1328c986f6.svg"] {
+    display: none; 
+}
+
+/* removes 'family' tab from settings */
 div[data-tab-id="Family Center"]
 {
   display: none;
@@ -508,57 +340,6 @@ div[id="cash-app-pay-container"]
   display: none;
 }
 
-/* removes 'app directory' tab from edit server */
-div[data-tab-id="APP_DIRECTORY"]
-{
-  display: none;
-}
-
-/* removes 'server template' tab from edit server */
-div[data-tab-id="GUILD_TEMPLATES"]
-{
-  display: none;
-}
-
-/* removes level 2 and 3 server boost upsell in server settings -> overview -> display 
-(otherwise known as server banner and invite backgrounds customisation) */
-[class="flexChild_dc333f"]:has([class*="upsellButton_"])
-{
-  display: none;
-}
-div[class*="upsell_"][role="button"][aria-hidden="true"]
-{
-  display: none;
-}
-div[class="divider_f0a9ff"]:has([class="flex_dc333f horizontal_dc333f justifyStart_ec1a20 justifyStart_ec1a20 noWrap_ec1a20"]):nth-of-type(2){
-  display: none;
-}
-
-/* removes server boost upsell in server settings -> stickers */
-div[class*="upsellContainer_"]
-{
-  display: none;
-}
-/* removes 'stickers lost' banner in server settings -> stickers */
-div[class="banner_ad4cb5"]
-{
-  display: none;
-}
-/* removes pink server boost level bar in server settings -> stickers */
-div[class*="progress_"][class*="progressBar_"]
-{
-  display: none;
-}
-/* hides lone divider grey bar in server settings -> stickers */
-div[class="divider_b03b7f divider_bb33d5"]
-{
-  display: none;
-}
-/* hides server boost logos in server settings -> stickers */
-svg[class*="tierIcon_"][class*="tierIconLocked_"]
-{
-  display: none;
-}
 /* server boost */
 div[class*="guildIconV2Container__"] {
     display: none !important;
@@ -566,118 +347,10 @@ div[class*="guildIconV2Container__"] {
 div[data-list-item-id*="channels___"] {
     display: none;
 }
+
 /* server image backgrounds */
 div[class*="animatedContainer_"]:has(div[class*="bannerImage_"]):has([src*="https://cdn.discordapp.com/banners/"]) {
     display: none;
-}
-/* removes buy buttons in server settings -> stickers */
-button[type="button"][class*="lookFilled_"][class*="colorGreen_"][class*="sizeMedium_"]
-{
-  display: none;
-}
-/* removes 'no server boost' text in settings -> stickers */
-div[class*=tierDefaultUnlocked_]
-{
-  display: none;
-}
-/* removes 'unlock more slots' button in server settings -> stickers 
-(BROKEN: removes avatar apply button lol */
-/* button[class*="lookFilled_"][class*="colorGreen_"]:has([class*="contents_"])
-{
-  display: none;
-} */
-
-/* removes 'soundboard' tab from server settings */
-div[data-tab-id="SOUNDBOARD"]
-{
-  display: none;
-}
-
-/* removes some separator bars in server settings */
-div[class="separator_a0"]:nth-of-type(14){
-    display: non;
-}
-/* more separator bars in server settings */
-div[class="separator_a0"]:nth-of-type(20){
-  display: non;
-}
-/* more separator bars in server settings */
-div[class="separator_a0"]:nth-of-type(23){
-  display: non;
-}
-/* more separator bars in server settings */
-div[class="separator_a0"]:nth-of-type(19){
-  display: non;
-}
-/* more separator bars in server settings */
-div[class="separator_a0"]:nth-of-type(28){
-  display: non;
-}
-/* 'community' in some server settings */
-div[class="header_a0"]:has([class="eyebrow_dc00ef headerText_a0"]):nth-of-type(21){
-  display: non;
-}
-/* 'community' in some server settings BUT also removes 'app settings' header in settings.*/
-div[class="header_a0"]:has([class="eyebrow_dc00ef headerText_a0"]):nth-of-type(20){
-  display: non;
-}
-/* 'monetization' in server settings */
-div[class="header_a0"]:has([class="eyebrow_dc00ef headerText_a0"]):nth-of-type(24){
-  display: non;
-}
-
-div[class="separator_a0"]
-{
-    opacity: 70%;
-    height: 0.5px!important;
-}
-
-/* removes community tab in server settings */
-div[data-tab-id="COMMUNITY"]
-{
-  display: none;
-}
-
-/* removes 'onboarding' tab in server settings */
-div[data-tab-id="ONBOARDING"]
-{
-  display: none;
-}
-
-/* removes 'discovery' tab in server settings */
-div[data-tab-id="DISCOVERY"]
-{
-  display: none;
-}
-
-/* removes 'custom invite link' tab in server settings */
-div[data-tab-id="VANITY_URL"]
-{
-  display: none;
-}
-
-/* removes 'welcome screen' tab in server settings */
-div[data-tab-id="COMMUNITY_WELCOME"]
-{
-  display: none;
-}
-
-/* removes 'server insights' tab in server settings */
-div[data-tab-id="ANALYTICS"]
-{
-  display: none;
-}
-
-/* removes subscriptions tab in server settings */
-div[data-tab-id="ROLE_SUBSCRIPTIONS"]
-{
-  display: none;
-}
-
-/* removes server boost tab in server settings */
-div[data-tab-id="GUILD_PREMIUM"]
-{
-  display: none;
 }
 
 /* hides 'open chat' icon when hovering over server voice channel */
@@ -692,31 +365,8 @@ div[class*="newChannel_"]
   display: none;
 }
 
-/* stops some pixels slightly merging with the bottom of profile picture in settings -> my account */
-div[class="userInfo_b69b77"]
-{
-  height: 60px;
-}
-
 /* removes 'clips' tab in settings */
 div[data-tab-id="Settings Clips"]
-{
-  display: none;
-}
-
-/* removes small 'new' notifications next to forum channels */
-div[class*="channelInfo_"]:has([class="text-xs/semibold_dc00ef"])
-{
-  display: none;
-}
-/* removes popout when hovering over forum channels */
-div[id*="popout_"]:has([class*="popout_c5b389"])
-{
-  display: none;
-}
-
-/* hides 'getting started' progress bar at the top of server channels */
-div[class*="progressBarContainer_"][role="button"]:has([class*="progressBarText_"])
 {
   display: none;
 }
@@ -736,40 +386,10 @@ button[aria-label="Share Your Screen"]
   border-radius: 4px!important;
 }
 
-/* remove hovering mouse over nitro badge making stars appear */
-div[class*="starContainer_"]
-{
-  display: none;
-}
-
 /* hides disabled soundboard button overlay when deafened */
-span[class*="disabledButtonWrapper_"]:has(button[aria-label="Soundboard disabled when deafened"])
+button[aria-label="Soundboard disabled when deafened"]
 {
   display: none;
-}
-
-/* rounds corners of call buttons in normal calls*/
-button[aria-label="Turn On Microphone"]
-{
-  border-radius: 4px!important;
-}
-button[aria-label="Disconnect"][class*="red_"]
-{
-  border-radius: 4px!important;
-}
-button[aria-label="Turn On Camera"]
-{
-  border-radius: 4px!important;
-}
-
-/* button alignment fixes. might be theme specific? */
-div[class*="flex_"][class*="horizontal_"][class*="justifyStart_"][class*="alignStretch_"][class*="noWrap_"][class*="voiceButtonsContainer_"]:has(button[aria-label="Noise Suppression powered by Krisp"])
-{
-  margin-right: 0.5px!important;
-}
-.panels_a4d4d9 .container_b2ca13 .flex_dc333f
-{
-  margin-top: 0.5px!important;
 }
 
 /* fixes alignment issues near deafen/mute button */
@@ -777,9 +397,13 @@ div[class*="flex_"][class*="horizontal_"][class*="justifyStart_"][class*="alignS
     margin-bottom: 4px;
     margin-left: 1px;
 }
-/* more profile picture squared + corners */
-img[alt] {
-    border-radius: 3px;
+/* in call pfps */
+.tile__90dc5 .avatarWrapper_fb62e2 {
+    box-shadow: none;
+}
+.tile__90dc5 .avatarWrapper_fb62e2 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+    x: 0px !important;
+    y: 0px !important;
 }
 
 /* status indicator outline */
@@ -798,7 +422,7 @@ circle[fill="black"][r="20"][cx="100"]
 }
 rect[class*="pointerEvents_"][mask="url(#svg-mask-status-online-mobile)"]
 {
-  outline: 2px solid rgb(46, 38, 38);
+  outline: 2x solid rgb(46, 38, 38);
   border-radius:1px!important;
 }
 rect[class*="pointerEvents_"][width="16"][height="24"]{
@@ -812,29 +436,26 @@ rect[class*="pointerEvents_"][width="10"][height="15"]{
 rect[fill="black"][style="opacity: 0.45;"]{
     display: none;
 }
+
 /* fixes square status icon */
 .svg__2338f.mask_a423bd {
     border-radius: 10px;
-}
-
-/* rounded mute icon in call (ill fix this messy layout one day...) */
-button[aria-label="Turn Off Microphone"][class*="staticButton_"][class*="lookBlank_"][class*="colorable_"]{
-    border-radius: 4px;
 }
 
 /* Deletes  'nitro preview' in settings -> user profile */
 div[class*="segmentedControlNonNitro_"]{
     display: none;
 }
+div[class*="premiumFeatureBorder_"]{ 
+    display: none;
+}
+div[class*="upsellContainer_"]{
+    display: none; 
+}
 
 /* in call speaking border (bottom left) */
 .avatarSpeaking__44b0c{
     border-radius: 4px;
-}
-
-/* disables notification popup about 'spooky' notification noises */
-.wrapper_c1da7a{
-    display: none;
 }
 
 /* removes border on tiny icon in someones profile next to mutual friend/mutual servers */
@@ -843,18 +464,6 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
     y: 0px !important;
     outline: none;
     box-shadow: none;
-}
-/* mutual friend icon stuff bla bla */
-.avatar_ccc074{
-    mask: none;
-    -webkit-mask: none;
-    inline-size: 10px;
-}
-.section_fc9b46{
-    gap: 12px;
-}
-.biteSizeInnerThemed_c69a7b .mutuals_fc9b46 .iconSizeSmol_a64689{
-    border-radius: 2px;
 }
 
 /* removes border from offline server members and fixes pixel offset */
@@ -868,6 +477,7 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
     outline: none;
     box-shadow: none !important;
 }
+
 
 /* square pfps in call + borders*/
 div[class*="voiceAvatar_"]{
@@ -890,6 +500,10 @@ div[class*="voiceAvatar_"]{
 /* deafen/mute icon in call turned into a square */
 .status_f910d0 {
     border-radius: 4px;
+}
+/* square pfp hovering over server with members in call */
+.avatar__183c2 {
+    border-radius: 4px !important;
 }
 
 /* removes discover from bottom of server list as of 03/12/2024 */
@@ -991,8 +605,8 @@ img[src="https://cdn.discordapp.com/badge-icons/undefined.png"] {
 }
 
 /* extends server list background colour to the bottom of the screen, hides cut off point that looks ugly */
-.scroller_fea3ef.none_c49869.scrollerBase_c49869 {
-    height: 100%;
+.visual-refresh .base_c48ade .sidebar_c48ade .guilds_c48ade .stack_dbd263 {
+    height: 100% !important;
 }
 
 /* removes snow from direct messages button at very top left */
@@ -1016,29 +630,31 @@ foreignObject[mask*="url(#"]:has(div[class="childWrapper__6e9f8 childWrapperNoHo
 div[class="userAvatar__55bab avatar__07f91 avatarSmall__07f91"] {
     border-radius: 3px;
 }
-.container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 .avatar_d80634.avatarSpeaking_d80634 {
+div[class*="avatarSpeaking__"] {
         border-radius: 3px;
 }
-
-.container_ee69e0 .list_a478e5 .clickable_d80634 .content_d80634 {
-        border-radius: 3px !important;
+.container__2637a .list_c3cd7d .clickable__07f91 .content__07f91 {
+    border-radius: 4px;
 }
 
 /* fixes scroll bar appearing when DMs aren't full with users yet */
-ul[role="list"][aria-label="Direct Messages"][class="content_eed6a8"] {
+ul[role="list"][aria-label="Direct Messages"] {
     height: 100% !important;
 }
 
 /* makes stream preview corners rounded in calls */
 .background_cff728:before {
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .streamPreview_ba4b17 {
-    border-radius: 6px;
+    border-radius: 3px;
+}
+.content__2f4f7 {
+    border-radius: 3px;
 }
 
 /* hide quest icon in 'playing <game>' */
-svg[class="questsIcon_ad923e"] {
+svg[class*="questsIcon_"] {
     display: none;
 }
 
@@ -1051,12 +667,8 @@ button[aria-label="Turn On Camera"] {
     display: none;
 }
 
-.perksDemoContainer__5dec7 {
-    display: none;
-}
-
 /* remove more cringe ads */
-div[class="wrapper_e9b191"]:has([class="rewardTileWrapper_e9b191"]) {
+[class*="rewardTileWrapper_"] {
     display: none;
 }
 
@@ -1086,21 +698,16 @@ div[class="buttons__74017"] {
 }
 
 /* fixes disgusting 16px curve in folders for server icons */
-div[class="icon_f34534 guildIcon__48112 iconSizeMini_f34534 iconInactive_f34534"] {
+div[class*="folderPreviewWrapper_"] {
+    border-radius: 4px !important;
+}
+div[class*="folderButton_"] {
     border-radius: 4px !important;
 }
 
 /* remove discovery icon */
-div[class="listItem__650eb"]:has(div[class*="discoveryIcon_"]) {
+div[class*="listItem_"]:has(div[class*="discoveryIcon_"]) {
     display: none;
-}
-
-/* dm icon squish fix */
-div[style="opacity: 1; height: 40px; transform: scale(1);"]:has(foreignObject[mask*="url(#"]):has([data-list-item-id*="guildsnav___"]):has([src*="https://cdn.discordapp.com/avatars/"]) {
-    width: 48px !important; 
-    height: 48px !important;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
 }
 
 /* Removes horrid DM container banner */
@@ -1123,24 +730,20 @@ div[data-tab-id="Clicker Game Settings"] {
 }
 
 /* image viewing fixes */
-div[class="wrapper__44b0c authorAvatar__6088c base__5cd44"] {
-    display: none;
-}
-div[class="author__6088c base__5cd44"] {
-    display: none;
-}
 div[class="carouselModal_d3a6f0 theme-dark theme-midnight images-dark root__49fc1"] {
     box-shadow: none !important;
 }
-
-/* Call buttons */
-div[class*="buttonSection__"][class*="experimentButtonSection__"] {
-    color: transparent !important;
-    background: transparent !important;
-}
-div[class="contextMenuNubExperiment_f1ceac colorable_f1ceac attachedCaret_f1ceac experimentDark_f1ceac"] {
+div[class*="authorAvatar_"] {
     display: none;
 }
+.author__6088c {
+    display: none;
+}
+div[class="hoverButtonGroup__06ab4"]:has(div[aria-label="Edit Image with Apps"]) {
+    display: none;
+}
+
+/* Call buttons */
 span[class="dot__148e9 maskSecondary__148e9"] {
     display: none;
 }
@@ -1149,18 +752,7 @@ span[class="dot__148e9 maskSecondary__148e9"] {
 }
 .buttonSection__1405b {
     gap: 0px !important;
-}
-div[class="attachedCaretButtonContainer_f1ceac"]:has([class="lottieIcon__5eb9b lottieIconColors__5eb9b centerIcon_f1ceac experimentControlIcon_f1ceac controlIcon_f1ceac themeable_f1ceac"]) {
-    display: none;
-}
-button[class="staticButton_f1ceac centerButton_f1ceac colorable_f1ceac experimentButton_f1ceac colorable_f1ceac disconnect_f1ceac fullRegionButton_f1ceac button__201d5 lookBlank__201d5 colorBrand__201d5"] {
-    width: 20px !important;
-}
-div[class="attachedCaretButtonContainer_f1ceac"]:has(button[class="staticButton_f1ceac centerButton_f1ceac colorable_f1ceac experimentButton_f1ceac colorable_f1ceac disconnect_f1ceac fullRegionButton_f1ceac button__201d5 lookBlank__201d5 colorBrand__201d5"]) {
-    padding: 4px !important;
-}
-div[class="buttonSection__1405b experimentButtonSection__1405b"]:has([aria-label="Share Your Screen"]) {
-    gap: 5px !important
+    border-radius: 2px !important;
 }
 div[aria-label="More Options"] {
     height: 12px;
@@ -1169,7 +761,7 @@ div[aria-label="More Options"] {
 }
 
 /* new server badge in profiles */
-span[class="chipletContainerInner__10651 chipletContainerInline__10651 clickable__10651"] {
+span[class*="chipletContainerInner_"]:has([class*="badge_"]) {
     display: none;
 }
 
@@ -1187,11 +779,11 @@ foreignObject[mask*="url(#"] {
 .full-motion .overlay__75742:after{
   border-radius: 3px!important;
 }
-.avatar_f9f2ca{
+.avatar_c19a55{
   border-radius: 3px!important;
   outline: 2px solid rgb(46, 38, 38);
 }
 foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
   x: 2px!important;
   y: 2px!important;
-}
+} 
