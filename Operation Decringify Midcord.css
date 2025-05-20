@@ -788,7 +788,10 @@ foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
   y: 2px!important;
 } 
 
-/* avatar hover popup removal */
+/* avatar/activity hover popup removal */
 div[class*="avatarPopover_"] {
+    display: none;
+}
+div[class*="activityPopover_"] {
     display: none;
 }
