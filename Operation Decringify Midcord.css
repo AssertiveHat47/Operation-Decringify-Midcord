@@ -704,6 +704,16 @@ div[class*="folderPreviewWrapper_"] {
 div[class*="folderButton_"] {
     border-radius: 4px !important;
 }
+div[class*="folderGroup_"] {
+    border-radius: 4px !important;
+}
+div[class*="folderIconWrapper_"] {
+    border-radius: 4px !important;
+}
+div[class*="folderButton"] {
+    border-radius: 4px !important;
+}
+
 
 /* remove discovery icon */
 div[class*="listItem_"]:has(div[class*="discoveryIcon_"]) {
