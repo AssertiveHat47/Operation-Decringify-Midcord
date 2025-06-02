@@ -800,6 +800,9 @@ foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
 div[class*="SizeSmol_"] {
     border-radius: 2px;
 }
+img[class*="replyAvatar_"] {
+    border-radius: 2px;
+}
 
 /* avatar/activity hover popup removal */
 div[class*="avatarPopover_"] {
