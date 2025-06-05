@@ -843,4 +843,7 @@ img[src="data:image/bmp;base64,Qk2KEAAAAAAAAIoAAAB8AAAAIAAAACAAAAABACAAAwAAAAAAA
     width: 32px !important;
 }
 
-/* update you raw pos */
+/* no more purple text */
+.text__87e56 {
+    color: rgb(165, 165, 165) !important;
+}
