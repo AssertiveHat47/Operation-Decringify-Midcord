@@ -847,3 +847,8 @@ img[src="data:image/bmp;base64,Qk2KEAAAAAAAAIoAAAB8AAAAIAAAACAAAAABACAAAwAAAAAAA
 .text__87e56 {
     color: rgb(165, 165, 165) !important;
 }
+
+/* textbox gap between gif and keyboard go byebye */
+.container_c0c49a, .iconContainer_c0c49a {
+    display: none;
+}
