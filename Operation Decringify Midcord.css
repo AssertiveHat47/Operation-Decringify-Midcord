@@ -852,3 +852,8 @@ img[src="data:image/bmp;base64,Qk2KEAAAAAAAAIoAAAB8AAAAIAAAACAAAAABACAAAwAAAAAAA
 .container_c0c49a, .iconContainer_c0c49a {
     display: none;
 }
+
+/* hides show more button under activity on right side in dms */
+div[class*="showMoreButtonContainer_"] {
+    display: none;
+}
