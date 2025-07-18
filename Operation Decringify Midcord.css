@@ -865,5 +865,5 @@ div[class*="showMoreButtonContainer_"] {
 
 /* disable orb badges on profile */
 div[aria-label*="Orb Profile Badge"] {
-    display: non3;
+    display: none;
 }
