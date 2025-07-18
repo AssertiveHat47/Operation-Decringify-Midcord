@@ -857,3 +857,8 @@ img[src="data:image/bmp;base64,Qk2KEAAAAAAAAIoAAAB8AAAAIAAAACAAAAABACAAAwAAAAAAA
 div[class*="showMoreButtonContainer_"] {
     display: none;
 }
+
+/* disable orb badges on profile */
+div[aria-label*="Orb Profile Badge"] {
+    display: non3;
+}
