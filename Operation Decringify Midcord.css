@@ -19,6 +19,11 @@ button[aria-label="Send a gift"]
     display: none;
 }
 
+/* remove sticker button */
+div[class*="stickerButton_"] {
+    display: none !important;
+}
+
 /* Hide things in DMs page */
 li div a[href="/shop"], /* Hide 'Shop' Tab */
 li div a[href="/store"] /* Hide 'Ntiro' Tab */
