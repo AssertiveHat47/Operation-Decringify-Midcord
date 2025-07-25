@@ -877,3 +877,61 @@ div[class*="stickerButton_"] {
 div[class*="emojiButton_"] {
     display: none !important;
 }
+
+/* removes spacer above chatbox */
+div[class*="scrollerSpacer_"] {
+    height: 16px !important;
+}
+
+/* removes background image from new profiles */
+div[class*="backgroundImage_"] {
+    display: none;
+}
+
+/* square mutual server icons */
+div[class*="iconActiveMedium_"] {
+    border-radius: 4px!important;
+}
+
+/* connection icons for other services */
+/* white background behind small icons */
+div[class*="platformIconContainer_"] {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+/* steam */
+img[src="/assets/07ca603d9273b502.png"] {
+    content: url("https://i.imgur.com/CvTCDNX.png")
+}
+/* steam small */
+img[src="/assets/b68f2f4df4af9085.png"] {
+    content: url("https://i.imgur.com/CvTCDNX.png")
+}
+/* playstation */
+img[src="/assets/46a23515a87620b9.png"] {
+    content: url("https://i.imgur.com/RbMPUo2.png")
+}
+/* xbox */
+img[src="/assets/09781ebf5509f48e.png"] {
+    content: url("https://i.imgur.com/0tPlu0k.png")
+}
+/* twitch */
+img[src="/assets/45900de231038a6d.png"] {
+    content: url("https://i.imgur.com/W8IuWMy.png")
+}
+/* battle.net */
+img[src="/assets/0e1a419c00a471a2.png"] {
+    content: url("https://i.imgur.com/tHuL2y3.png")
+}
+/* spotify */
+img[src="/assets/40518c6ced9fed93.png"] {
+    content: url("https://i.imgur.com/7mp0UTf.png")
+}
+/* youtube */
+img[src="/assets/c569f6e10f1fa390.png"] {
+    content: url("https://i.imgur.com/AdjKmct.png")
+}
+/* twitter */
+img[src="/assets/90d18081c2eb2ea3.png"] {
+    content: url("https://i.imgur.com/8zHvMx6.png")
+}
