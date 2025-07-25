@@ -867,3 +867,13 @@ div[class*="showMoreButtonContainer_"] {
 div[aria-label*="Orb Profile Badge"] {
     display: none;
 }
+
+/* remove hidden sticker button */
+div[class*="stickerButton_"] {
+    display: none !important;
+}
+
+/* remove hidden emoji button */
+div[class*="emojiButton_"] {
+    display: none !important;
+}
