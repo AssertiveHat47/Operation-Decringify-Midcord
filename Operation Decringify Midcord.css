@@ -18,6 +18,9 @@ button[aria-label="Send a gift"]
 {
     display: none;
 }
+div[aria-label="Send a gift"] {
+    display: none;
+}
 
 /* remove sticker button */
 div[class*="stickerButton_"] {
