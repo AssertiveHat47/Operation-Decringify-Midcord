@@ -938,3 +938,8 @@ img[src="/assets/c569f6e10f1fa390.png"] {
 img[src="/assets/90d18081c2eb2ea3.png"] {
     content: url("https://i.imgur.com/8zHvMx6.png")
 }
+
+/* hides quest promotion in active now */
+div[class*="inset_"]:has(span[class*="promoted"]) {
+    display: none;
+}
