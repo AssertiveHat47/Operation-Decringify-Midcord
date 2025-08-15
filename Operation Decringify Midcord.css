@@ -943,3 +943,8 @@ img[src="/assets/90d18081c2eb2ea3.png"] {
 div[class*="inset_"]:has(span[class*="promoted"]) {
     display: none;
 }
+
+/* removes stupid mask that covers half a message when people are typing */
+div[class*="managedReactiveScroller_"] {
+    mask: none !important;
+}
