@@ -289,17 +289,6 @@ div[class^="premiumTrialBadge_"]
   display: none;
 }
 
-/* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
-div[class="defaultColor__4bd52 text-sm/medium_cf4812 membersGroup_c8ffbb container__13cf1"]:has([xmlns="http://www.w3.org/2000/svg"]) {
-    display: none;
-}
-div[class="container__0f2e8 openOnHover__0f2e8"] {
-    display: none;
-}
-h3[class*="membersGroup_"]:has([xmlns="http://www.w3.org/2000/svg"]) {
-    display: none;
-}
-
 /* Remove emoji button and soundboard button in bottom left 
 when watching screenshare/webcam */
 div[class*="voiceEffectsActionBar_"]
@@ -948,3 +937,4 @@ div[class*="inset_"]:has(span[class*="promoted"]) {
 div[class*="managedReactiveScroller_"] {
     mask: none !important;
 }
+
