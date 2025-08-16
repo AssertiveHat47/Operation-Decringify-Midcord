@@ -942,3 +942,9 @@ div[class*="managedReactiveScroller_"] {
 div[class*="usesCardRows_"] {
     display: none;
 }
+h3[class*="text-sm/medium__13cf1"]:has([role="button"]) {
+    display: none !important;
+}
+div[class*="openOnHover_"]:has([class*="infoSection_"]) {
+    display: none;
+}
