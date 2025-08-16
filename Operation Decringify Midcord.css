@@ -938,3 +938,7 @@ div[class*="managedReactiveScroller_"] {
     mask: none !important;
 }
 
+/* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
+div[class*="usesCardRows_"] {
+    display: none;
+}
