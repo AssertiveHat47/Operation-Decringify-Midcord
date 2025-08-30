@@ -933,9 +933,9 @@ div[class*="inset_"]:has(span[class*="promoted"]) {
     display: none;
 }
 
-/* removes stupid mask that covers half a message when people are typing */
-div[class*="managedReactiveScroller_"] {
-    mask: none !important;
+/* removes retarded gradient when someone is typing */
+div[class*="chatTypingGradientAtBottom_"] {
+    display: none;
 }
 
 /* removes new activity cards from server (CRINGE TO BEGIN WITH NEVER ADD THEM AGAIN SHITCORD) */
@@ -948,3 +948,4 @@ h3[class*="text-sm/medium__13cf1"]:has([role="button"]) {
 div[class*="openOnHover_"]:has([class*="infoSection_"]) {
     display: none;
 }
+
