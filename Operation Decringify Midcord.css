@@ -934,7 +934,7 @@ div[class*="inset_"]:has(span[class*="promoted"]) {
 }
 
 /* removes retarded gradient when someone is typing */
-div[class*="chatTypingGradientAtBottom_"] {
+div[class*="chatGradientBase_"] {
     display: none;
 }
 
@@ -948,4 +948,5 @@ h3[class*="text-sm/medium__13cf1"]:has([role="button"]) {
 div[class*="openOnHover_"]:has([class*="infoSection_"]) {
     display: none;
 }
+
 
