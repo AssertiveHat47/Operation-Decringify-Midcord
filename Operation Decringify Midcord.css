@@ -949,4 +949,25 @@ div[class*="openOnHover_"]:has([class*="infoSection_"]) {
     display: none;
 }
 
-
+/* removes coloured names in DMs and glows behind names */
+span[data-username-with-effects] {
+    paint-order: normal !important;
+    -webkit-text-stroke-width: 0 !important;
+    -webkit-text-stroke-color: transparent !important;
+    color: inherit !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    transition: none !important;
+}
+span[data-username-with-effects]::before {
+    background: none !important;
+    animation-iteration-count: none !important;
+}
+span[class*="glowContainer_"] {
+    background: none !important;
+}
+span[class*="nameGlow_"] {
+    display: none !important;
+}
