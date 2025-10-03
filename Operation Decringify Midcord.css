@@ -133,12 +133,6 @@ div[aria-label="Start Video Call"]
   display: none;
  }
 
- /* removes message hover buttons completely (just right click lmao) */
-div[class*="popoverReactionHoverBar_"]
- {
-  display: none;
- } 
-
 /* removes 'invite to server' from 3 dots on full profile */
 div[id="user-profile-overflow-menu-invite-to-server"]
 {
@@ -970,4 +964,9 @@ span[class*="glowContainer_"] {
 }
 span[class*="nameGlow_"] {
     display: none !important;
+}
+
+/* removes message actions box */
+div[aria-label="Message Actions"] {
+    display: none;
 }
