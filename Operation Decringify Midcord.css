@@ -966,7 +966,8 @@ span[class*="nameGlow_"] {
     display: none !important;
 }
 
-/* removes message actions box */
+/* removes message actions box 
 div[aria-label="Message Actions"] {
     display: none;
 }
+*/
