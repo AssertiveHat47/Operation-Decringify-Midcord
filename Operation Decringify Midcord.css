@@ -982,7 +982,7 @@ div[class*="panelSubtextContainer__"]:has(div[class*="defaultColor__"]) {
 }
 
 /* remove 'go to shop' ad in edit profile */
-div[class*="container_"]:has(div[role="presentation"]) {
+div[class*="container_"]:has([src*="https://cdn.discordapp.com/assets/content/"]) {
     display: none;
 }
 
@@ -1012,7 +1012,7 @@ svg[aria-label="Heads up! Your status & activity are hidden if you’re Invisibl
 }
 
 /* moves create group dm button to the right of the screen */
-div[aria-label="New Group DM"]{
+div[aria-label="New Group DM"] {
     left: 98px !important;
 }
 
@@ -1083,5 +1083,4 @@ div[style*="918ac9ba948b5e6b.gif"] {
     background-position: 50% center;
     background-size: cover;
 }
-
 
