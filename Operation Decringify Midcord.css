@@ -966,8 +966,19 @@ span[class*="nameGlow_"] {
     display: none !important;
 }
 
+/* A world of gray is superior to gradient glows. */
+span[class*="ColorGradient_"] {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    background: inherit;
+}
+span[class*="ColorGradient_"]:hover {
+    text-decoration: underline !important;
+}
+
 /* removes message actions box 
 div[aria-label="Message Actions"] {
     display: none;
 }
 */
+
