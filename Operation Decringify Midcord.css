@@ -976,9 +976,111 @@ span[class*="ColorGradient_"]:hover {
     text-decoration: underline !important;
 }
 
-/* removes message actions box 
-div[aria-label="Message Actions"] {
+/* hides new 'add status'  */
+div[class*="panelSubtextContainer__"]:has(div[class*="defaultColor__"]) {
     display: none;
 }
-*/
+
+/* remove 'go to shop' ad in edit profile */
+div[class*="container_"]:has(div[role="presentation"]) {
+    display: none;
+}
+
+/* remove name plate preview */
+div[class*="customizationSection_"]:has(div[aria-label="Preview of your Nameplate in the member list"]) {
+    display: none;
+}
+
+/* remove various nitro icons */
+path[d="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18 0 0 1 11.8 12c0-1.29.95-2.25 2.22-2.25 1.27 0 2.22.96 2.22 2.25ZM23 12c0 5.01-4 9-8.99 9a8.93 8.93 0 0 1-8.75-6.9H3.34l-.9-4.2H5.3c.26-.96.68-1.89 1.21-2.7H1.89L1 3h12.74C19.13 3 23 6.99 23 12Zm-4.26 0c0-2.67-2.1-4.8-4.73-4.8A4.74 4.74 0 0 0 9.28 12c0 2.67 2.1 4.8 4.73 4.8a4.74 4.74 0 0 0 4.73-4.8Z"] {
+    display: none;
+}
+
+/* (beta) removes every single element that contains the word upsell */
+[class*="upsell"] {
+    display: none !important;
+}
+
+/* fixes settings overlapping change profile */
+div[class*="layerContainer_"]:has(div[class*="focusLock_"]) {
+    z-index: 9999 !important;
+}
+
+/* Remove warning about being invisible */
+svg[aria-label="Heads up! Your status & activity are hidden if you’re Invisible"] {
+    display: none;
+}
+
+/* moves create group dm button to the right of the screen */
+div[aria-label="New Group DM"]{
+    left: 98px !important;
+}
+
+/* removes message actions box */
+div[aria-label="Message Actions"]:has(div[class*="hoverBarButton_"]) {
+    display: none;
+}
+
+/* messages now have a hover */
+li[class*="messageListItem_"]:hover {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+
+/* The most important change of all, change pfp -> gifs */ 
+div[style*="1071e0c5ceaf6ef7.png"] {
+    content: url("https://media1.tenor.com/m/9l6azVtoaDgAAAAd/anime-tears.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="6d14801ca95f25f1.png"] {
+    content: url("https://media1.tenor.com/m/9ymVuW6ZTk0AAAAd/sageyonce.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="4637e85fff87537c.png"] {
+    content: url("https://media1.tenor.com/m/qKC7gFe_7ckAAAAd/spider-man2-spider-man.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="ca693e3ef16951f4.png"] {
+    content: url("https://media1.tenor.com/m/PrAWbpX-mcAAAAAd/dsp-darksydephil.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="153f9d50b423a199.gif"] {
+    content: url("https://media1.tenor.com/m/9l6azVtoaDgAAAAd/anime-tears.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="e629538747745c9a.gif"] {
+    content: url("https://media1.tenor.com/m/9ymVuW6ZTk0AAAAd/sageyonce.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="963f22200d58a4d8.gif"] {
+    content: url("https://media1.tenor.com/m/qKC7gFe_7ckAAAAd/spider-man2-spider-man.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
+div[style*="918ac9ba948b5e6b.gif"] {
+    content: url("https://media1.tenor.com/m/PrAWbpX-mcAAAAAd/dsp-darksydephil.gif");
+    height: 96px;
+    width: 96px;
+    background-position: 50% center;
+    background-size: cover;
+}
 
