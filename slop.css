@@ -1,0 +1,723 @@
+/* 'message' and 'more' buttons on friends page */
+.actionButton_f8fa06{
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+.actionButton_f8fa06:hover{
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+.actionButton_f8fa06:active{
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+
+/* empty card on friends page */
+div[class*="emptyCard_"]:has(h2[class*="emptyHeader_"]):has(h2[class*="heading-md/semibold_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+
+/* 'message' and 'more' buttons on friends side profile in dms */
+.button_fb7f94{
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+}
+.button_fb7f94:hover{
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+.button_fb7f94:active{
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+
+/* DMs - right side porfile. Recently played/playing, member+friends since, mutual servers, view full profile */
+div[class="none_d125d2 scrollerBase_d125d2"] {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+div[class*="overlay_"][class*="overlay_"] {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832 {
+    color: rgb(238, 238, 238);
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+}
+.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832:hover {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+
+/* large view profile */
+div[class*="profile_"] {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+div[class*="banner_"] {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+.user-profile-modal-v2 {
+    border-radius: 4px !important;
+}
+div[class*="button_"][aria-label="Add Role"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+div[class*="button_"][aria-label="Add Role"]:hover {
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff8, inset 0 -1px #6662, 0 0 3px 2px #fff6;
+}
+div[class*="button_"][aria-label="Add Role"]:active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+    border-radius: 3px !important;
+}
+/* Activity, large view profile */
+img[aria-label="App icon"] {
+    border-radius: 4px;
+}
+img[aria-label*="App icon for"] {
+    border-radius: 4px;
+}
+
+/* Full Profile */
+.connectedAccountContainer_e6abe8 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.card__39ec2 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.inner_c0bea0 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+
+/* mutual friends */
+div[class*="row_"]:has(div[class*="iconActiveMedium_"]) {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+div[class*="row_"]:has(div[class*="avatar_"]) {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+
+/* glowing time */
+foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+    outline: none;
+}
+.avatar_c19a55{
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+    outline: none;
+}
+
+/* edit profile/edit status/switch account */
+div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]) {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]):hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]):active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+
+/* gif fav button and gifs in general */
+div[class*="gifFavoriteButton_"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+}
+div[class*="gifFavoriteButton_"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="gifFavoriteButton_"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="navButton_"][role="tab"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+}
+div[class*="navButton_"][role="tab"]:hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+}
+div[class*="navButton_"][role="tab"]:active {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+.contentWrapper__08434 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000b;
+    background: var(--d8d9);
+}
+
+/* -------------------------------- (TO DO LATER) */
+
+/* Pixel overheard fix for buttons next to username (bottom left) */
+div[class="micButtonParent__37e49"]:has([aria-label="Mute"]) {
+    width: 31px;
+}
+.panels_c48ade .button__67645.enabled__67645:only-child {
+    border-radius: 0px !important;
+}
+button[aria-label="Disable Game Activity"] {
+    left: 1px;
+    margin-left: 0px !important;
+}
+button[aria-label="Enable Game Activity"] {
+    left: 1px;
+    margin-left: 0px !important;
+}
+
+/* -------------------------------- (BREAKAGE PENDING BUT STILL WORKS) */
+
+/* server name dropdown + invite button at the top of channel list */
+.clickable__75742:hover .overlay__75742:after {
+    border-radius: 4px !important;
+}
+.invitesRefresh_f37cb1 .guildDropdown_f37cb1:hover {
+    background: none;
+}
+.theme-dark .container__2637a .header_f37cb1:active {
+    background: linear-gradient(var(--d8dC), var(--d8dB) 50%, var(--d8dD) 50%, var(--d8dE))
+}
+.invitesRefresh_f37cb1 .inviteButton_f37cb1:hover {
+    background: none;
+}
+.container__2637a .hasBanner_f37cb1 .header_f37cb1 {
+    background: linear-gradient(var(--d8d8), var(--d8dA) 50%, var(--d8dB) 50%, var(--d8dC));
+    box-shadow: inset 0 1px #fff2, inset 0 2px #fff1;
+    border-radius: 0px;
+}
+
+/* -------------------------------- (idk what these do i didnt label them) */
+
+.visual-refresh .buttons__74017 {
+    gap: 0 !important;
+}
+
+.activitiesTooltip_c9d15c.hasMultipleActivities_c9d15c {
+    display: list-item !important;
+    align-items: center !important;
+}
+
+.tooltipContent__382e7 {
+    padding: 8px 12px !important;
+}
+
+.fullRegionDropdownButton_f1ceac.disconnect_f1ceac {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+
+/* Vencord, Vencord Settings */
+div[class*="vc-settings-quickActions-card"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+button[class="vc-settings-quickActions-pill"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+button[class="vc-settings-quickActions-pill"]:hover{
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+button[class="vc-settings-quickActions-pill"]:active {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="vc-special-card"] {
+    display: none;
+}
+/* Vencord, Plugins */
+div[class="vc-addon-card"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+div[class="vc-addon-card"]:hover{
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="inputWrapper_"]:has(input[placeholder="Search for a plugin..."]) {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+input[class*="input_"][placeholder="Search for a plugin..."] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    border: none;
+    border-radius: 3px;
+}
+input[class*="input_"][placeholder="Search for a plugin..."]:active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+div[class*="vc-plugins-info-card"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+/* Vencord, Themes, Local Themes */
+div[class*="vc-settings-card"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+/* Vencord, Themes, Online Themes */
+div[class*="vc-warning-card"] {
+    display: none;
+}
+
+/* My Account, Security */
+div[class*="credentialItem_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+/* My Account, Standing */
+div[class*="avatarBackground_"] {
+    border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* Profiles, Per-server Profiles */
+img[class*="guildIconImage_"] {
+    border-radius: 4px;
+}
+/* Content & Social, Discord */
+div[class*="clydeIconContainer_"] {
+    border-radius: 4px;
+}
+div[class*="guildSelectOptionIcon_"] {
+    border-radius: 4px;
+}
+div[class*="radioBar_"][class*="radioPositionLeft_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+div[class*="radioBar_"][class*="radioPositionLeft_"]:hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="radioBar_"][class*="radioPositionLeft_"]:active {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 8px;
+}
+div[class*="tab_"][class*="vertical_"] {
+    background: linear-gradient(to bottom, var(--d8br5) 0%, var(--d8br6) 50%, var(--d8br8) 50%, var(--d8brA) 100%);
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    height: 32px;
+    border-radius: 3px;
+    color: white;
+}
+div[class*="tab_"][class*="vertical_"][aria-selected="true"] {
+    color: white;
+}
+div[class*="tab_"][class*="vertical_"]:hover:not([aria-selected="true"]) {
+    background: linear-gradient(to bottom, var(--d8br3) 0%, var(--d8br4) 50%, var(--d8br7) 50%, var(--d8br9) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff8, inset 0 -1px #6662, 0 0 3px 2px #fff6;
+}
+div[class*="tab_"][class*="vertical_"]:active:not(:disabled, [aria-selected="true"]) {
+    background: linear-gradient(to bottom, var(--d8brA) 0%, var(--d8br9) 50%, var(--d8brB) 50%, var(--d8brA) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff2, inset 0 -1px #0002, 0 0 1px 2px #fff6;
+}
+/* Content & Social, Connected Games */
+div[class*="categorySubGroup_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+    padding: 10px;
+}
+div[class*="emptyContainer_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+/* Nitro */
+div[class*="wrapper_"]:has(button[class*="giftButton_"]) {
+    display: none;
+    transform: none !important;
+    opacity: 0 !important;
+}
+button[class*="button_"]:has(div[class*="premiumSubscribeButton_"]):has(svg[class*="premiumIcon_"]) {
+    display: none;
+}
+div[class*="perkCard_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+/* Server Boost */
+div[class*="recommendedServerCard_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+div[class*="iconSizeLarger_"][class*="iconInactive_"][class*="icon_"] {
+    border-radius: 4px;
+}
+div[class*="wrapper_"]:has(li[class*="questionWrapper_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+li[class*="boosterRecognitionCard_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+    opacity: 95%
+}
+/* Appearance */
+div[data-align="stretch"][data-direction="horizontal"]:has(div[aria-label="Mint Apple"]) {
+    display: none;
+}
+div[class*="header_"]:has([aria-label="Exclusive to Nitro"]):has(svg[class*="premiumIcon_"]) {
+    display: none;
+}
+div[class*="selectionGroup_"]:has(div[class*="appIconSelectionContainer_"]) {
+    display: none;
+}
+/* Keybinds */
+input[id=":r3bg:"][class*="input_"][type="checkbox"] {
+    right: 8px !important;
+}
+input[id=":r3c3:"][class*="input_"][type="checkbox"] {
+    right: 8px !important;
+}
+input[id=":r3cj:"][class*="input_"][type="checkbox"] {
+    right: 8px !important;
+}
+input[id=":r3d2:"][class*="input_"][type="checkbox"] {
+    right: 8px !important;
+}
+input[id=":r3dh:"][class*="input_"][type="checkbox"] {
+    right: 8px !important;
+}
+/* Activity Privacy */
+div[class*="headerContainer_"]:not(div[class*="select_"]) {
+    background: none;
+}
+img[height="48"][width="48"][src*="https://cdn.discordapp.com/icons/"] {
+    border-radius: 4px;
+}
+/* Registered Games */
+div[class*="flexCenter_"]:has(div[class*="gameNameLastPlayed_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+/* Game Overlay */
+div[class*="groupContent_"]:has([class*="groupMainContent_"]):has([class*="groupMainContent_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+}
+div[class*="groupContainer_"]:has([aria-label*="Enable Legacy overlay for"]) {
+    border-radius: 0;
+}
+img[alt*="App icon for"][class*="gameIcon_"] {
+    border-radius: 4px;
+}
+input[id=":r5ho:"][class*="input_"][type="checkbox"] {
+    left: 250px !important;
+}
+input[id=":r5j9:"][class*="input_"][type="checkbox"] {
+    left: 190px !important;
+}
+input[id=":r5jg:"][class*="input_"][type="checkbox"] {
+    left: 151px !important;
+}
+input[id=":r5jn:"][class*="input_"][type="checkbox"] {
+    left: 58px !important;
+}
+input[id=":r5ju:"][class*="input_"][type="checkbox"] {
+    left: 173px !important;
+}
+div[class*="widgetContainer_"]:has([class*="voiceWidgetContainer_"]):has([class*="voiceUserContainer_"]) {
+    display: none;
+}
+
+/* Global Settings */
+/* All drop downs */
+div[class*="container_"][role="button"][aria-haspopup="listbox"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="wrapper_"][class*="select_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="wrapper_"][class*="select_"]:hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="wrapper_"][class*="select_"]:active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+div[class*="popout_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="option_"][aria-selected="true"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="option_"][aria-selected="false"]:hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="option_"][aria-selected="false"]:active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+/* More dropdowns, e.g. per-server profiles */
+div[class*="wrapper_"]:has([class*="select_"][class*="searchable_"]) {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="wrapper_"]:has([class*="select_"][class*="searchable_"]):hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="wrapper_"]:has([class*="select_"][class*="searchable_"]):active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+li[class*="option_"][class*="focused_"]:has(svg[class*="selectedIcon_"]) {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+}
+li[class*="option_"][role="option"]:has(div[class*="content_"]):hover {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+li[class*="option_"][role="option"]:has(div[class*="content_"]):active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+}
+
+/* All Buttons */
+div[class*="buttonChildrenWrapper_"] {
+    background: linear-gradient(to bottom, var(--d8br5) 0%, var(--d8br6) 50%, var(--d8br8) 50%, var(--d8brA) 100%);
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    height: 32px;
+    border-radius: 3px;
+}
+div[class*="buttonChildrenWrapper_"]:hover {
+    background: linear-gradient(to bottom, var(--d8br3) 0%, var(--d8br4) 50%, var(--d8br7) 50%, var(--d8br9) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff8, inset 0 -1px #6662, 0 0 3px 2px #fff6;
+}
+div[class*="buttonChildrenWrapper_"]:active:not(:disabled) {
+    background: linear-gradient(to bottom, var(--d8brA) 0%, var(--d8br9) 50%, var(--d8brB) 50%, var(--d8brA) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff2, inset 0 -1px #0002, 0 0 1px 2px #fff6;
+}
+button[class*="critical-secondary_"] {
+    color: white;
+}
+button[class*="critical-secondary_"]:hover {
+    color: white;
+}
+button[class*="critical-secondary_"]:active {
+    color: white;
+}
+
+/* Compact buttons */
+div[class*="compactButton_"] {
+    background: linear-gradient(to bottom, var(--d8br5) 0%, var(--d8br6) 50%, var(--d8br8) 50%, var(--d8brA) 100%);
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    border-radius: 3px;
+}
+div[class*="compactButton_"]:hover {
+    background: linear-gradient(to bottom, var(--d8br3) 0%, var(--d8br4) 50%, var(--d8br7) 50%, var(--d8br9) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff8, inset 0 -1px #6662, 0 0 3px 2px #fff6;
+}
+div[class*="compactButton_"]:active:not(:disabled) {
+    background: linear-gradient(to bottom, var(--d8brA) 0%, var(--d8br9) 50%, var(--d8brB) 50%, var(--d8brA) 100%);
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff2, inset 0 -1px #0002, 0 0 1px 2px #fff6;
+}
+
+/* fix displacement of checkboxes */
+input[class*="input_"][type="checkbox"] {
+    right: 90px
+}
+
+/* Voice messages */
+div[class*="rippleContainer_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+div[class*="playButtonContainer_"][aria-label="Play"] {
+    background: linear-gradient(to bottom, var(--d8br5) 0%, var(--d8br6) 50%, var(--d8br8) 50%, var(--d8brA) 100%);
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    border-radius: 3px;
+}
+div[class*="playButtonContainer_"][aria-label="Pause"] {
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    border-radius: 3px;
+}
+div[class*="playbackRate_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+
+/* survey popups */
+div[class*="item_"][class*="itemFilled_"][class*="radioItem_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+}
+div[class*="wrapper_"]:has(textarea[placeholder*="Let us know why "]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+
+/* Server boosts (top left when clicking on non-community server) */
+div[class*="containerDefault_"]:has(path[d="M10.95 1.4a1.59 1.59 0 0 1 2.1 0l4.9 4A3.37 3.37 0 0 1 19 8v8c0 1.07-.4 2.06-1.05 2.6l-4.9 4c-.65.53-1.45.53-2.1 0l-4.9-4A3.37 3.37 0 0 1 5 16V8c0-1.07.4-2.06 1.05-2.6l4.9-4ZM7.32 6.95 12 3.12l4.68 3.83c.07.06.32.4.32 1.05v8c0 .65-.25 1-.32 1.05L12 20.88l-4.68-3.83C7.25 16.99 7 16.65 7 16V8c0-.65.25-1 .32-1.05Z"]) {
+    display: none;
+}
+
+/* Add to group/invite screen */
+div[class*="friendWrapper_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+div[class*="searchBarComponent_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    border: none;
+    border-radius: 3px;
+}
+div[class*="searchBarComponent_"]:hover {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+    border-radius: 3px;
+}
+div[class*="copyInputDefault_"] {
+    background: linear-gradient(var(--d8dD) 0%, var(--d8dC) 50%, var(--d8dB) 50%, var(--d8dA) 100%);
+    border: none;
+    border-radius: 3px;
+}
+div[class*="copyInputDefault_"]:hover {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000;
+    border-radius: 3px;
+}
+div[class*="inviteRow_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+
+/* invite embeds */
+div[class*="guildInviteContainer_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 8px;
+}
+div[class*="avatarWrapper_"] {
+    background: none;
+}
+
+/* Toasts */
+div[class*="toast_"] {
+    box-shadow: 0 0 0 1px #0006, inset 0 0 0 1px #fff2, inset 0 1px 4px #000;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Full screen image view */
+div[class*="actionButtons_"]:has(button[aria-label="Zoom In"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+    gap: 4px;
+}
+div[class*="button_"][class*="closeButton_"][aria-label="Close"]:has(div[class*="buttonInner_"]) {
+    border: solid 1px #000 !important;
+    background: linear-gradient(var(--d8d8), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dA)) !important;
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0000, 0 0 #0000, inset 0 0 #0000 !important;
+    border-radius: 3px;
+}
+div[class*="button_"][class*="closeButton_"][aria-label="Close"]:has(div[class*="buttonInner_"]):hover {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #fff1, 0 1px 3px #000, inset 0 0 #0000 !important;
+}
+div[class*="button_"][class*="closeButton_"][aria-label="Close"]:has(div[class*="buttonInner_"]):active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000 !important;
+}
+
+/* TO DO SOMEDAY
+- All server setting pages */
