@@ -1090,9 +1090,39 @@ svg[class="vc-membercount-total-count"] {
     fill: rgb(150, 150, 150);
 }
 
+/* Forwarding */
+img[class*="channelGuildIcon_"] {
+    border-radius: 4px;
+}
+div[class*="outerContainer_"] > div[data-mana-component="modal"]:has(div[data-list-item-id*="forward-modal_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 6px;
+}
+.iconWithGuildIcon__2894c {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+}
+.overflowCount__68334 {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+}
+div[class="imageWrapper"]:has(img[alt="Image"]) {
+    border-radius: 4px;
+}
+/* To do - group chat pictures */
+
+/* upload */
+div[class*="uploadDropModal_"] {
+    background: linear-gradient(to bottom, var(--d8br5) 0%, var(--d8br6) 50%, var(--d8br8) 50%, var(--d8brA) 100%);
+    text-shadow: 0 -1px #000, 0 1px 3px #0004;
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff4, inset 0 -1px #0008, 0 0 1px 2px #fff2;
+    border-radius: 3px;
+}
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
