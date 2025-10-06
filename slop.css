@@ -67,6 +67,14 @@ div[class*="overlay_"][class*="overlay_"] {
     box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
     background: var(--dtm-08-tab-selected-bg);
 }
+/* right side profile improvements */
+div[class*="imagePosition_"]:has(img[class*="contentImage_"]) {
+    border-radius: 4px;
+}
+div[class*="actions_"]:has(button[aria-busy="false"]):has(button[class*="button_"]):has(button[class*="secondary_"]):has(button[class*="sm_"]) {
+    padding-bottom: 2px;
+    padding-left: 3px;
+}
 
 /* large view profile */
 div[class*="profile_"] {
@@ -104,23 +112,7 @@ img[aria-label*="App icon for"] {
 }
 
 /* Full Profile */
-.connectedAccountContainer_e6abe8 {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
-.card__39ec2 {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
-.inner_c0bea0 {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    background: var(--dtm-08-tab-selected-bg);
-}
+
 
 /* mutual friends */
 div[class*="row_"]:has(div[class*="iconActiveMedium_"]) {
@@ -749,6 +741,188 @@ div[class*="button_"][class*="closeButton_"][aria-label="Close"]:has(div[class*=
     box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000 !important;
 }
 
+/* group dms */
+div[class*="hoverableContainer_"][aria-label="Edit Group"] {
+    border-radius: 4px;
+    height: 95%;
+    padding: 1px;
+}
+div[class*="hoverableContainer_"][aria-label="Edit Group"]:hover {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    height: 95%;
+    padding: 1px;
+}
+div[class*="hoverableContainer_"][aria-label="Edit Group"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+    height: 95%;
+    padding: 1px;
+}
+
+/* inbox */
+div[class*="tooltip_"] {
+    z-index: 10000 !important;
+    background: linear-gradient(to bottom, var(--d8d8) 0%, var(--d8dB) 50%, var(--d8dC) 51%, var(--d8dA) 100%);
+    box-shadow: inset 0 0 0 1px #fff3, 0 0 0 1px #000a, 0 1px 3px #000b;
+    border-radius: 3px;
+}
+[class*="caretIcon_"] {
+    display: none;
+}
+img[class*="image_"] {
+    border-radius: 4px !important;
+}
+div[class*="maskBackground_"]:has(img[src*=".svg"]) {
+    display: none;
+}
+div[class*="controlButton_"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="controlButton_"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="controlButton_"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="friendRequestsButton_"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="friendRequestsButton_"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="friendRequestsButton_"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="numberBadge_"] {
+    border-radius: 4px;
+    box-shadow: var(--dtm-08-tab-selected-bs);
+}
+div[class*="button_"][aria-label="More"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="button_"][aria-label="More"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="button_"][aria-label="More"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="tutorial_"] {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+div[class*="tutorialIcon_"] {
+    border-radius: 4px;
+    color: #eee;
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+}
+div[class*="channelHeader_"][data-list-item-id*="unreads___recents-header"] {
+    background-color: transparent;
+}
+img[class*="dmIcon_"] {
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+    outline: none;
+}
+div[class*="messages_"]:has(div[class*="messageContainer_"]):has(div[class*="jumpButton_"]) {
+    background: linear-gradient(var(--d8d9), var(--d8dC));
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
+    border-radius: 3px;
+}
+div[class*="jumpButton_"] {
+    border: solid 1px #000 !important;
+    background: linear-gradient(var(--d8d8), var(--d8d7) 50%, var(--d8d9) 50%, var(--d8dA)) !important;
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0000, 0 0 #0000, inset 0 0 #0000 !important;
+    border-radius: 3px;
+}
+div[class*="jumpButton_"]:hover {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #fff1, 0 1px 3px #000, inset 0 0 #0000 !important;
+}
+div[class*="jumpButton_"]:active {
+    box-shadow: inset 0 0 0 1px #fff2, inset 0 100px #0001, 0 0 #0000, inset 0 1px 5px #000 !important;
+}
+div[class*="button_"][aria-label="Notification Settings"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="button_"][aria-label="Notification Settings"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="button_"][aria-label="Notification Settings"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="button_"][aria-label="Mark As Read"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="button_"][aria-label="Mark As Read"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="button_"][aria-label="Mark As Read"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+div[class*="button_"][aria-label="Close"] {
+    border-radius: 4px;
+    color: #eee;
+    background: var(--dtm-08-tab-selected-bg);
+    box-shadow: var(--dtm-08-tab-selected-bs);
+    background-color: var(--background-modifier-hover);
+    margin-right: 1px;
+}
+div[class*="button_"][aria-label="Close"]:hover {
+    color: var(--d8l8);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.267) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.533) 0px 1px inset, rgba(102, 102, 102, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 3px 2px;
+    background: linear-gradient(to bottom, var(--d8d0) 0%, var(--d8d2) 50%, var(--d8d4) 50%, var(--d8d5) 100%);
+}
+div[class*="button_"][aria-label="Close"]:active {
+    background: linear-gradient(to bottom, var(--d8d7) 0%, var(--d8d6) 50%, var(--d8d8) 50%, var(--d8d7) 100%);
+    box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
+}
+
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
