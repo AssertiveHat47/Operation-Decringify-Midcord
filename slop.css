@@ -203,8 +203,11 @@ div[class*="wrapper_"] > svg[width="80"][height="80"] {
     box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
 }
 /* Fuck this piece of shit */
+#app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > div > aside > div > div.content_d125d2 > div.member__5d473.member_c8ffbb.offline__5d473.container__91a9d.clickable__91a9d > div > div.memberInner__5d473.layout__91a9d > div.avatar__91a9d > div {
+    right: -2px;
+}
 #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > div > aside > div > div.content_d125d2 > div:nth-child(4) > div > div > div.avatar__91a9d > div > svg {
-    left: -2px !important;
+    left: 0px !important;
     top: -2px !important;
 }
 div[class*="wrapper_"] > svg[width="32"][height="32"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
@@ -1084,6 +1087,7 @@ svg[class="vc-membercount-total-count"] {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
