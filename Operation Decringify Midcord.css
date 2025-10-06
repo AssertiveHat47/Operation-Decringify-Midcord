@@ -981,6 +981,17 @@ div[class*="panelSubtextContainer__"]:has(div[class*="defaultColor__"]) {
     display: none;
 }
 
+/* cleaner status in DM list */
+div[class*="dot_"][class*="activityStatusText_"] {
+    display: none;
+}
+div[class*="container_"][class*="textXs_"] {
+    --custom-activity-status-icon-size: 0px;
+    --custom-activity-status-emoji-size: 0px;
+    gap: 0px !important;
+}
+
+
 /* remove 'go to shop' ad in edit profile */
 div[class*="container_"]:has([src*="https://cdn.discordapp.com/assets/content/"]) {
     display: none;
@@ -1083,4 +1094,5 @@ div[style*="918ac9ba948b5e6b.gif"] {
     background-position: 50% center;
     background-size: cover;
 }
+
 
