@@ -1129,3 +1129,8 @@ div[class*="disabledPointerEvents_"] {
 div[class*="rowGuildName_"] > div[role="button"] > div[class*="flowerStarContainer_"] {
     display: none;
 }
+
+/* a small icon in some acitivities */
+div[class*="activitySectionAssets_"] > img[class*="smallImage_"] {
+    display: none;
+}
