@@ -1037,8 +1037,19 @@ div[class*="nonVisualMediaItem_"]:has(div[class*="newMosaicStyle_"]) {
     background: var(--dtm-08-tab-selected-bg);
 }
 
+.layer__960e4 .contentRegion__23e6b {
+    animation: none !important;
+}
+.layer__960e4 .sidebarRegion__23e6b {
+    animation: none !important;
+}
+.layer__960e4 .standardSidebarView__23e6b {
+    animation: none !important;
+}
+
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
