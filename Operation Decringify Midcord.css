@@ -783,19 +783,19 @@ span[class*="chipletContainerInner_"]:has([class*="badge_"]) {
 /* square pfps */
 foreignObject[mask*="url(#"] {
   mask: none;
-  border-radius: 3px!important;
+  border-radius: 4px!important;
 }
 .avatar_2e8lTP{
-  border-radius: 3px!important;
+  border-radius: 4px!important;
 }
 .clickable_f94206:hover .overlay_f94206:after{
-  border-radius: 3px!important;
+  border-radius: 4px!important;
 }
 .full-motion .overlay__75742:after{
-  border-radius: 3px!important;
+  border-radius: 4px!important;
 }
 .avatar_c19a55{
-  border-radius: 3px!important;
+  border-radius: 4px!important;
   outline: 2px solid rgb(46, 38, 38);
 }
 foreignObject[mask*="url(#"]:has([class*="avatarStack_"]) {
@@ -1152,3 +1152,4 @@ div[class*="innerCloseButtonPlated_"] {
 .accountProfileCard__1fed1 .avatar__1fed1 {
     background: none;
 }
+
