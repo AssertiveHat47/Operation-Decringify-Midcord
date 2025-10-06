@@ -232,6 +232,12 @@ a[aria-label*="(group message)"] > div[class*="layout_"] > div[class*="avatar_"]
     padding-left: 2px;
     padding-top: 5px;
 }
+a[aria-label*="(direct message)"] > div[class*="layout_"] > .avatar__20a53 {
+    padding-bottom: 4px !important
+}
+a[aria-label*="(group message)"] > div[class*="layout_"] > .avatar__20a53 {
+    padding-bottom: 4px !important
+}
 
 /* edit profile/edit status/switch account */
 div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]) {
@@ -1087,6 +1093,7 @@ svg[class="vc-membercount-total-count"] {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
