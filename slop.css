@@ -177,7 +177,7 @@ foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
     outline: none;
 }
 .avatar_c19a55{
-    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+    box-shadow: 0 0 2px 0.5px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
     outline: none;
 }
 /* glowing outline fix collection */
@@ -188,7 +188,10 @@ div[class*="gdmIcon_"] > svg[width="20"][height="20"] > foreignobject[mask*="url
 }
 div[class*="gdmIcon_"] > svg[width="20"][height="20"] {
     border-radius: 4px !important;
-    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+    box-shadow: 0 0 2px 0.5px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+}
+div[class*="wrapper_"][class*="gdmIcon_"]:has(svg[width="20"][height="20"]) {
+    padding-left: 4px;
 }
 div[class*="wrapper_"] > svg[width="80"][height="80"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
     border-radius: 4px !important;
@@ -1054,6 +1057,7 @@ div[class*="nonVisualMediaItem_"]:has(div[class*="newMosaicStyle_"]) {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
