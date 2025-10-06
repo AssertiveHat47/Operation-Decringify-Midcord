@@ -238,6 +238,9 @@ a[aria-label*="(direct message)"] > div[class*="layout_"] > .avatar__20a53 {
 a[aria-label*="(group message)"] > div[class*="layout_"] > .avatar__20a53 {
     padding-bottom: 4px !important
 }
+section[aria-label="Channel header"] > div[class*="upperContainer_"] > div[class*="children_"] div > div[class*="wrapper_"] {
+    top: -2px;
+}
 
 /* edit profile/edit status/switch account */
 div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]) {
@@ -1122,6 +1125,7 @@ div[class*="uploadDropModal_"] {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
