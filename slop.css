@@ -199,15 +199,16 @@ div[class*="wrapper_"] > svg[width="80"][height="80"] {
     border-radius: 4px !important;
     box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
 }
-div[class*="wrapper_"] > svg[width="32"][height="32"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
+
+ div[class*="wrapper_"] > svg[width="32"][height="32"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
     border-radius: 4px !important;
     x: 0px !important;
     y: 0px !important;
 }
 div[class*="wrapper_"] > svg[width="32"][height="32"] {
     border-radius: 4px !important;
-    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
-}
+    box-shadow: 0 0 2px 0.5px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+} 
 div[class="wrapper_"]:not(div[aria-label="Set Status"] > div[class="wrapper_"]) > svg[width="40"][height="40"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
     border-radius: 4px !important;
     x: 0px !important;
@@ -218,7 +219,8 @@ div[class*="peopleListItem_"] > div[class*="listItemContents_"] > div[class*="us
     padding-top: 4px;
 }
 a[aria-label*="(group message)"] > div[class*="layout_"] > div[class*="avatar_"] > div[class*="wrapper_"]:has(foreignObject[mask="url(#svg-mask-avatar-default)"]) {
-    padding-left: 2px
+    padding-left: 2px;
+    padding-top: 5px;
 }
 
 /* edit profile/edit status/switch account */
@@ -1052,6 +1054,7 @@ div[class*="nonVisualMediaItem_"]:has(div[class*="newMosaicStyle_"]) {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
