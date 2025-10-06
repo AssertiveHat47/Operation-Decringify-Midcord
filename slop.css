@@ -43,6 +43,57 @@ div[class*="emptyCard_"]:has(h2[class*="emptyHeader_"]):has(h2[class*="heading-m
 }
 
 /* DMs - right side porfile. Recently played/playing, member+friends since, mutual servers, view full profile */
+div[class*="none_"][class*="scrollerBase_"]:has(div[class*="activityContainer_"]) {
+    border-radius: 0px!important;
+    color: var(--d8l8);
+    background: var(--dtm-08-tab-selected-bg);
+}
+div[class*="overlay_"][class*="overlay_"] {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832:hover {
+    border-radius: 4px !important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.footerButton__7f9c0 {
+    border-radius: 0px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.footerButton__7f9c0:hover {
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff4, inset 0 1px #fff8, inset 0 -1px #6662, 0 0 3px 2px #fff6;
+}
+.footerButton__7f9c0:active {
+    box-shadow: 0 0 0 1px #000b, inset 0 0 0 1px #fff2, inset 0 1px #fff2, inset 0 -1px #0002, 0 0 1px 2px #fff6;
+}
+/* small white line between profile and banner*/
+:where(.banner__68edb):before {
+    border-bottom: none;
+}
+/* temp fix for hover recent activity picture */
+.clickableImage__39ec2, .clickableImage__39ec2:after {
+    border-radius: 4px;
+}
+.user-profile-sidebar .inner_c0bea0 {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+/* popout outline */
+:root .user-profile-popout {
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+}
 
 /* right side profile improvements */
 div[class*="imagePosition_"]:has(img[class*="contentImage_"]) {
@@ -128,6 +179,43 @@ foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
 .avatar_c19a55{
     box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
     outline: none;
+}
+/* glowing outline fix collection */
+div[class*="gdmIcon_"] > svg[width="20"][height="20"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
+    border-radius: 4px !important;
+    x: 0px !important;
+    y: 0px !important;
+}
+div[class*="gdmIcon_"] > svg[width="20"][height="20"] {
+    border-radius: 4px !important;
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+}
+div[class*="wrapper_"] > svg[width="80"][height="80"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
+    border-radius: 4px !important;
+    x: 0px !important;
+    y: 0px !important;
+}
+div[class*="wrapper_"] > svg[width="80"][height="80"] {
+    border-radius: 4px !important;
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+}
+div[class*="wrapper_"] > svg[width="32"][height="32"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
+    border-radius: 4px !important;
+    x: 0px !important;
+    y: 0px !important;
+}
+div[class*="wrapper_"] > svg[width="32"][height="32"] {
+    border-radius: 4px !important;
+    box-shadow: 0 0 2px 1px var(--header-primary), 0 0 0 2px rgb(51, 47, 47);
+}
+div[class="wrapper_"]:not(div[aria-label="Set Status"] > div[class="wrapper_"]) > svg[width="40"][height="40"] > foreignobject[mask*="url(#"]:has([class*="avatarStack_"]) {
+    border-radius: 4px !important;
+    x: 0px !important;
+    y: 0px !important;
+    box-shadow: none;
+}
+div[class*="peopleListItem_"] > div[class*="listItemContents_"] > div[class*="userInfo_"] {
+    padding-top: 4px;
 }
 
 /* edit profile/edit status/switch account */
@@ -914,8 +1002,44 @@ div[class*="button_"][aria-label="Close"]:active {
     box-shadow: rgba(0, 0, 0, 0.733) 0px 0px 0px 1px, rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.133) 0px 1px inset, rgba(0, 0, 0, 0.133) 0px -1px inset, rgba(255, 255, 255, 0.4) 0px 0px 1px 2px;
 }
 
+/* txt preview file in chat */
+div[class*="nonVisualMediaItem_"]:has(div[class*="newMosaicStyle_"]) {
+    border-radius: 4px;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.newMosaicStyle__4d95d .textContainer__4d95d {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.newMosaicStyle__4d95d .footer__4d95d {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.newMosaicStyle__4d95d .codeView__4d95d {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
