@@ -1095,9 +1095,9 @@ img[class*="channelGuildIcon_"] {
     border-radius: 4px;
 }
 .size-md__8a031 {
-    background: linear-gradient(var(--d8d9), var(--d8dC));
-    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008;
-    border-radius: 6px;
+    background: linear-gradient(var(--d8d9), var(--d8dC)) !important;
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008 !important;
+    border-radius: 6px !important;
 }
 .iconWithGuildIcon__2894c {
     background: linear-gradient(var(--d8d9), var(--d8dC));
@@ -1122,6 +1122,7 @@ div[class*="uploadDropModal_"] {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
