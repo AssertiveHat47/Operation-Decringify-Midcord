@@ -1076,8 +1076,15 @@ img[class*="gameCoverImage__"] {
     border-radius: 4px;
 }
 
+/* offline icon in servers anti-colourblind */
+svg[class="vc-membercount-total-count"] {
+    fill: rgb(150, 150, 150);
+}
+
+
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
