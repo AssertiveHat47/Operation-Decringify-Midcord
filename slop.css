@@ -43,30 +43,7 @@ div[class*="emptyCard_"]:has(h2[class*="emptyHeader_"]):has(h2[class*="heading-m
 }
 
 /* DMs - right side porfile. Recently played/playing, member+friends since, mutual servers, view full profile */
-div[class="none_d125d2 scrollerBase_d125d2"] {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
-div[class*="overlay_"][class*="overlay_"] {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
-.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832 {
-    border-radius: 4px!important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
-.firstCardContainer__84832.hasShowMoreButton__84832 .card__84832:hover {
-    border-radius: 4px !important;
-    color: var(--d8l8);
-    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
-    background: var(--dtm-08-tab-selected-bg);
-}
+
 /* right side profile improvements */
 div[class*="imagePosition_"]:has(img[class*="contentImage_"]) {
     border-radius: 4px;
@@ -112,7 +89,22 @@ img[aria-label*="App icon for"] {
 }
 
 /* Full Profile */
-
+.connectedAccountContainer_e6abe8 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.card__39ec2 {
+    border-radius: 4px!important;
+    color: var(--d8l8);
+    box-shadow: rgba(255, 255, 255, 0.133) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 1px inset, rgba(0, 0, 0, 0.533) 0px 0px 0px 1px, rgba(0, 0, 0, 0.533) 0px 1px 4px;
+    background: var(--dtm-08-tab-selected-bg);
+}
+.inner_c0bea0 {
+    color: var(--d8l8);
+    background: var(--dtm-08-tab-selected-bg);
+}
 
 /* mutual friends */
 div[class*="row_"]:has(div[class*="iconActiveMedium_"]) {
@@ -924,5 +916,6 @@ div[class*="button_"][aria-label="Close"]:active {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
