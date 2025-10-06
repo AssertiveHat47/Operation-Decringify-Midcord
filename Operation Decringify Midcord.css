@@ -456,6 +456,19 @@ foreignobject[mask*="url(#"][width="16"][height="16"]:has([class*="avatarStack_"
     outline: none;
     box-shadow: none;
 }
+/* small mutual friend avatars on small profile popout */
+foreignObject[width="16"][height="16"] > div[class*="avatarStack_"] > img[class*="avatar_"] {
+    border-radius: 0px !important;
+}
+.status__44b0c, .svg__44b0c:has(foreignObject[width="16"]):has(foreignObject[height="16"]) {
+    border-radius: 0px !important;
+}
+li[class*="avatar_"][class*="size16_"] {
+    margin-right: 2px;
+    -webkit-mask: 0px;
+    mask: none;
+    mask-type: unset;
+}
 
 /* removes border from offline server members and fixes pixel offset */
 .offline__5d473 foreignobject[mask*="url(#"]:has([class*="avatarStack_"]){
@@ -1095,4 +1108,24 @@ div[style*="918ac9ba948b5e6b.gif"] {
     background-size: cover;
 }
 
+/* Scroller Neatness (Albeit bottom friend half-hidden in call but cope) */
+.visual-refresh .base_c48ade .form_f75fb0 {
+    margin-top: 0px;
+}
+.scroller__99e7c {
+    margin-bottom: -16px;
+    padding-bottom: 0px;
+}
 
+/* sticker + emoji picker server icons */
+img[class*="guildIcon_"] {
+    border-radius: 4px;
+}
+
+/* server hover icon removals */
+div[class*="disabledPointerEvents_"] {
+    pointer-events: all !important;
+}
+div[class*="rowGuildName_"] > div[role="button"] > div[class*="flowerStarContainer_"] {
+    display: none;
+}
