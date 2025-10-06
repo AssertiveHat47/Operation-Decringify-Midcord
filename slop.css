@@ -217,6 +217,9 @@ div[class="wrapper_"]:not(div[aria-label="Set Status"] > div[class="wrapper_"]) 
 div[class*="peopleListItem_"] > div[class*="listItemContents_"] > div[class*="userInfo_"] {
     padding-top: 4px;
 }
+a[aria-label*="(group message)"] > div[class*="layout_"] > div[class*="avatar_"] > div[class*="wrapper_"]:has(foreignObject[mask="url(#svg-mask-avatar-default)"]) {
+    padding-left: 2px
+}
 
 /* edit profile/edit status/switch account */
 div[class*="menuItemInner_"]:has(div[class*="menuItemContent_"]) {
@@ -1049,6 +1052,7 @@ div[class*="nonVisualMediaItem_"]:has(div[class*="newMosaicStyle_"]) {
 
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
