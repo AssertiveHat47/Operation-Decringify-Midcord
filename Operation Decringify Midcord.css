@@ -1149,3 +1149,6 @@ div[class*="innerCloseButtonPlated_"] {
     backdrop-filter: unset !important;
 }
 
+.accountProfileCard__1fed1 .avatar__1fed1 {
+    background: none;
+}
