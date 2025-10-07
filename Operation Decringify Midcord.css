@@ -1015,8 +1015,8 @@ div[class*="container_"][class*="textXs_"] {
 
 
 /* remove 'go to shop' ad in edit profile */
-div[class*="container_"]:has([src*="https://cdn.discordapp.com/assets/content/"]) {
-    display: none;
+div[class*="container_"]:has([src*="https://cdn.discordapp.com/assets/content/"]):not(div[class*="containerDMEmbedXP_"]) {
+  display: none:
 }
 
 /* remove name plate preview */
@@ -1152,4 +1152,5 @@ div[class*="innerCloseButtonPlated_"] {
 .accountProfileCard__1fed1 .avatar__1fed1 {
     background: none;
 }
+
 
