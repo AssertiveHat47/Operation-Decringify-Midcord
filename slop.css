@@ -1123,8 +1123,29 @@ div[class*="uploadDropModal_"] {
     border-radius: 3px;
 }
 
+/* activity fixes? */
+.container__133bf .nowPlayingColumn__133bf .scroller__7d20c .itemCard__7e549 .inset_bf1984 .section__00943 [data-text-variant="text-xs/normal"] + [data-text-variant="text-xs/normal"] {
+    margin-top: -8px !important;
+}
+div[class*="activitySectionWithButtons_"] > button[role="button"]:has(svg[class*="icon_"]) {
+    display: none;
+}
+
+/* searching */
+.resultsGroup__56fec {
+    background: linear-gradient(var(--d8d9), var(--d8dC)) !important;
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008 !important;
+}
+.queryContainer__55c99 {
+    background: linear-gradient(var(--d8d9), var(--d8dC)) !important;
+    box-shadow: inset 0 0 0 1px #fff2, 0 0 0 1px #000a, 0 1px 4px #0008 !important;
+}
+.option__56fec.user__56fec .displayAvatar__56fec {
+    border-radius: 4px;
+}
 /* TO DO SOMEDAY
 - All server setting pages */
+
 
 
 
