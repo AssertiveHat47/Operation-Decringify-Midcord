@@ -335,9 +335,11 @@ div[id="cash-app-pay-container"]
 div[class*="guildIconV2Container__"] {
     display: none !important;
 }
+/* 
 div[data-list-item-id*="channels___"] {
     display: none;
 }
+*/
 
 /* server image backgrounds */
 div[class*="animatedContainer_"]:has(div[class*="bannerImage_"]):has([src*="https://cdn.discordapp.com/banners/"]) {
@@ -1152,5 +1154,6 @@ div[class*="innerCloseButtonPlated_"] {
 .accountProfileCard__1fed1 .avatar__1fed1 {
     background: none;
 }
+
 
 
